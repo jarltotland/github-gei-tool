@@ -1,0 +1,5249 @@
+{
+  "version": 1,
+  "sourceOrg": "Ambita",
+  "targetOrg": "Ambitatest",
+  "sourceHost": "github.com",
+  "targetHost": "github.com",
+  "repos": {
+    "aab_ambita_university": {
+      "name": "aab_ambita_university",
+      "visibility": "internal",
+      "status": "synced",
+      "lastUpdate": "2025-11-10T17:27:19.345Z",
+      "lastChecked": "2025-11-10T17:27:19.345Z",
+      "lastPushed": "2025-03-25T15:45:10Z"
+    },
+    "aan": {
+      "name": "aan",
+      "visibility": "private",
+      "status": "synced",
+      "lastUpdate": "2025-11-10T17:27:23.519Z",
+      "lastChecked": "2025-11-10T17:27:23.519Z",
+      "lastPushed": "2025-02-25T09:38:53Z"
+    },
+    "abe": {
+      "name": "abe",
+      "visibility": "private",
+      "status": "synced",
+      "lastUpdate": "2025-11-10T17:12:59.840Z",
+      "lastChecked": "2025-11-10T17:12:59.840Z",
+      "lastPushed": "2025-02-25T13:38:52Z"
+    },
+    "abe-git": {
+      "name": "abe-git",
+      "visibility": "private",
+      "status": "synced",
+      "lastUpdate": "2025-11-10T17:13:02.645Z",
+      "lastChecked": "2025-11-10T17:13:02.645Z",
+      "lastPushed": "2025-05-27T11:23:00Z"
+    },
+    "adminne": {
+      "name": "adminne",
+      "visibility": "internal",
+      "status": "synced",
+      "lastUpdate": "2025-11-10T17:13:05.540Z",
+      "lastChecked": "2025-11-10T17:13:05.540Z",
+      "lastPushed": "2022-09-29T08:54:05Z"
+    },
+    "adp": {
+      "name": "adp",
+      "visibility": "private",
+      "status": "synced",
+      "lastUpdate": "2025-11-10T17:13:08.358Z",
+      "lastChecked": "2025-11-10T17:13:08.358Z",
+      "lastPushed": "2025-07-12T01:52:44Z"
+    },
+    "afproxy": {
+      "name": "afproxy",
+      "visibility": "private",
+      "status": "synced",
+      "lastUpdate": "2025-11-10T16:23:57.000Z",
+      "lastChecked": "2025-11-10T16:23:57.000Z",
+      "lastPushed": "2025-11-10T11:04:32Z"
+    },
+    "agent-tools-docs": {
+      "name": "agent-tools-docs",
+      "visibility": "internal",
+      "status": "synced",
+      "lastUpdate": "2025-11-10T16:23:59.755Z",
+      "lastChecked": "2025-11-10T16:23:59.755Z",
+      "lastPushed": "2025-11-05T11:15:18Z"
+    },
+    "akeldo": {
+      "name": "akeldo",
+      "visibility": "internal",
+      "status": "synced",
+      "lastUpdate": "2025-11-10T16:24:02.831Z",
+      "lastChecked": "2025-11-10T16:24:02.831Z",
+      "lastPushed": "2025-02-05T14:56:19Z"
+    },
+    "alex-test": {
+      "name": "alex-test",
+      "visibility": "internal",
+      "status": "synced",
+      "lastUpdate": "2025-11-10T16:24:05.947Z",
+      "lastChecked": "2025-11-10T16:24:05.947Z",
+      "lastPushed": "2025-01-28T09:14:20Z"
+    },
+    "altinn-dsve-codegen": {
+      "name": "altinn-dsve-codegen",
+      "visibility": "private",
+      "status": "synced",
+      "lastUpdate": "2025-11-10T16:24:08.874Z",
+      "lastChecked": "2025-11-10T16:24:08.873Z",
+      "lastPushed": "2025-07-08T10:21:00Z"
+    },
+    "altinnformidling": {
+      "name": "altinnformidling",
+      "visibility": "private",
+      "status": "synced",
+      "lastUpdate": "2025-11-10T16:24:11.950Z",
+      "lastChecked": "2025-11-10T16:24:11.950Z",
+      "lastPushed": "2024-10-09T12:54:03Z"
+    },
+    "ambit-university-zigma-kappa": {
+      "name": "ambit-university-zigma-kappa",
+      "visibility": "internal",
+      "status": "synced",
+      "lastUpdate": "2025-11-10T16:24:15.463Z",
+      "lastChecked": "2025-11-10T16:24:15.463Z",
+      "lastPushed": "2025-02-12T13:14:26Z"
+    },
+    "ambita-client": {
+      "name": "ambita-client",
+      "visibility": "private",
+      "status": "synced",
+      "lastUpdate": "2025-11-10T16:24:18.804Z",
+      "lastChecked": "2025-11-10T16:24:18.804Z",
+      "lastPushed": "2025-05-14T13:49:35Z"
+    },
+    "ambita-components-core": {
+      "name": "ambita-components-core",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:24:22.032Z",
+      "lastPushed": "2025-08-20T11:55:06Z",
+      "lastUpdate": "2025-11-10T16:24:22.032Z"
+    },
+    "ambita-components-dms": {
+      "name": "ambita-components-dms",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:24:24.936Z",
+      "lastPushed": "2022-09-29T08:40:23Z",
+      "lastUpdate": "2025-11-10T16:24:24.936Z"
+    },
+    "ambita-components-infoland-integrations": {
+      "name": "ambita-components-infoland-integrations",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:24:27.867Z",
+      "lastPushed": "2025-10-15T12:38:21Z",
+      "lastUpdate": "2025-11-10T16:24:27.867Z"
+    },
+    "ambita-components-infoland-internal": {
+      "name": "ambita-components-infoland-internal",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:24:30.787Z",
+      "lastPushed": "2025-11-05T19:13:33Z",
+      "lastUpdate": "2025-11-10T16:24:30.787Z"
+    },
+    "ambita-customer-sync": {
+      "name": "ambita-customer-sync",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:24:33.758Z",
+      "lastPushed": "2025-04-09T08:36:04Z",
+      "lastUpdate": "2025-11-10T16:24:33.758Z"
+    },
+    "ambita-design-system": {
+      "name": "ambita-design-system",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:24:36.645Z",
+      "lastPushed": "2020-09-30T13:44:57Z",
+      "lastUpdate": "2025-11-10T16:24:36.645Z"
+    },
+    "ambita-hme": {
+      "name": "ambita-hme",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:24:39.602Z",
+      "lastPushed": "2025-02-25T08:27:54Z",
+      "lastUpdate": "2025-11-10T16:24:39.602Z"
+    },
+    "ambita-json-editor": {
+      "name": "ambita-json-editor",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:24:42.376Z",
+      "lastPushed": "2024-05-23T10:11:22Z",
+      "lastUpdate": "2025-11-10T16:24:42.376Z"
+    },
+    "ambita-kode-push-messages": {
+      "name": "ambita-kode-push-messages",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:24:45.384Z",
+      "lastPushed": "2022-11-15T03:18:06Z",
+      "lastUpdate": "2025-11-10T16:24:45.384Z"
+    },
+    "ambita-loggly": {
+      "name": "ambita-loggly",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:24:48.042Z",
+      "lastPushed": "2023-07-19T23:15:42Z",
+      "lastUpdate": "2025-11-10T16:24:48.042Z"
+    },
+    "ambita-logs": {
+      "name": "ambita-logs",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:24:50.885Z",
+      "lastPushed": "2024-04-22T07:24:03Z",
+      "lastUpdate": "2025-11-10T16:24:50.885Z"
+    },
+    "ambita-map": {
+      "name": "ambita-map",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:24:53.990Z",
+      "lastPushed": "2024-03-14T13:20:51Z",
+      "lastUpdate": "2025-11-10T16:24:53.990Z"
+    },
+    "ambita-order-poc": {
+      "name": "ambita-order-poc",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:24:56.799Z",
+      "lastPushed": "2022-09-29T08:54:19Z",
+      "lastUpdate": "2025-11-10T16:24:56.799Z"
+    },
+    "ambita-order-system": {
+      "name": "ambita-order-system",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:24:59.763Z",
+      "lastPushed": "2024-01-23T16:22:46Z",
+      "lastUpdate": "2025-11-10T16:24:59.763Z"
+    },
+    "ambita-spring-boot-template": {
+      "name": "ambita-spring-boot-template",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:25:02.331Z",
+      "lastPushed": "2025-04-03T14:01:08Z",
+      "lastUpdate": "2025-11-10T16:25:02.332Z"
+    },
+    "ambita-step-function-graph": {
+      "name": "ambita-step-function-graph",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:25:04.929Z",
+      "lastPushed": "2022-09-29T07:17:32Z",
+      "lastUpdate": "2025-11-10T16:25:04.929Z"
+    },
+    "ambita-support": {
+      "name": "ambita-support",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:25:08.066Z",
+      "lastPushed": "2025-11-07T13:33:18Z",
+      "lastUpdate": "2025-11-10T16:25:08.066Z"
+    },
+    "ambita-tomcat": {
+      "name": "ambita-tomcat",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:25:12.270Z",
+      "lastPushed": "2024-02-20T11:07:14Z",
+      "lastUpdate": "2025-11-10T16:25:12.270Z"
+    },
+    "ambita-university-aan": {
+      "name": "ambita-university-aan",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:25:15.149Z",
+      "lastPushed": "2025-02-12T13:14:27Z",
+      "lastUpdate": "2025-11-10T16:25:15.149Z"
+    },
+    "ambita-university-nhe": {
+      "name": "ambita-university-nhe",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:25:18.300Z",
+      "lastPushed": "2025-02-12T13:14:21Z",
+      "lastUpdate": "2025-11-10T16:25:18.300Z"
+    },
+    "ambita-university-sec-game": {
+      "name": "ambita-university-sec-game",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:25:21.625Z",
+      "lastPushed": "2025-10-14T08:54:54Z",
+      "lastUpdate": "2025-11-10T16:25:21.625Z"
+    },
+    "ambita.github.io": {
+      "name": "ambita.github.io",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:25:25.297Z",
+      "lastPushed": "2022-07-29T14:55:24Z",
+      "lastUpdate": "2025-11-10T16:25:25.297Z"
+    },
+    "ambitaejbtools": {
+      "name": "ambitaejbtools",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:25:28.286Z",
+      "lastPushed": "2022-09-29T07:12:16Z",
+      "lastUpdate": "2025-11-10T16:25:28.286Z"
+    },
+    "ambitaman": {
+      "name": "ambitaman",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T16:25:30.978Z",
+      "lastPushed": "2022-11-17T13:24:33Z",
+      "lastUpdate": "2025-11-10T16:25:30.978Z"
+    },
+    "AmbitaU-05-25": {
+      "name": "AmbitaU-05-25",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:12:40.430Z",
+      "lastPushed": "2025-05-27T11:04:47Z",
+      "lastUpdate": "2025-11-10T17:12:40.430Z"
+    },
+    "ambitaU-dad": {
+      "name": "ambitaU-dad",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:12:43.569Z",
+      "lastPushed": "2025-02-12T12:59:17Z",
+      "lastUpdate": "2025-11-10T17:12:43.570Z"
+    },
+    "ambita_dwh": {
+      "name": "ambita_dwh",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:12:46.422Z",
+      "lastPushed": "2022-09-29T08:39:15Z",
+      "lastUpdate": "2025-11-10T17:12:46.422Z"
+    },
+    "ambita_samhandling_forretningsforer": {
+      "name": "ambita_samhandling_forretningsforer",
+      "visibility": "public",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:12:49.077Z",
+      "lastPushed": "2025-10-24T15:02:19Z",
+      "lastUpdate": "2025-11-10T17:12:49.077Z"
+    },
+    "amu-1-erikm": {
+      "name": "amu-1-erikm",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:12:52.350Z",
+      "lastPushed": "2025-02-12T13:14:12Z",
+      "lastUpdate": "2025-11-10T17:12:52.350Z"
+    },
+    "amu-2-erikm": {
+      "name": "amu-2-erikm",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:27:05.795Z",
+      "lastPushed": "2025-02-25T11:07:08Z",
+      "lastUpdate": "2025-11-10T17:27:05.795Z"
+    },
+    "ant": {
+      "name": "ant",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:27:08.645Z",
+      "lastPushed": "2022-09-29T09:42:50Z",
+      "lastUpdate": "2025-11-10T17:27:08.645Z"
+    },
+    "api-doc-generator-tester": {
+      "name": "api-doc-generator-tester",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:27:11.531Z",
+      "lastPushed": "2024-10-03T18:35:49Z",
+      "lastUpdate": "2025-11-10T17:27:11.531Z"
+    },
+    "api-documentation": {
+      "name": "api-documentation",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:27:14.246Z",
+      "lastPushed": "2023-04-12T05:37:27Z",
+      "lastUpdate": "2025-11-10T17:27:14.246Z"
+    },
+    "api-gateway-workshop": {
+      "name": "api-gateway-workshop",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:27:17.564Z",
+      "lastPushed": "2023-08-15T23:31:48Z",
+      "lastUpdate": "2025-11-10T17:27:17.564Z"
+    },
+    "api-test-system": {
+      "name": "api-test-system",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:44:27.875Z",
+      "lastPushed": "2025-09-09T20:58:27Z",
+      "lastUpdate": "2025-11-10T17:44:27.875Z"
+    },
+    "apihome": {
+      "name": "apihome",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:44:30.543Z",
+      "lastPushed": "2025-05-30T12:47:39Z",
+      "lastUpdate": "2025-11-10T17:44:30.543Z"
+    },
+    "appproputil": {
+      "name": "appproputil",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:44:33.092Z",
+      "lastPushed": "2022-09-29T09:22:22Z",
+      "lastUpdate": "2025-11-10T17:44:33.092Z"
+    },
+    "atlassian-api-scripts": {
+      "name": "atlassian-api-scripts",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:44:35.879Z",
+      "lastPushed": "2023-02-27T15:16:50Z",
+      "lastUpdate": "2025-11-10T17:44:35.879Z"
+    },
+    "au-prosjekt-ale": {
+      "name": "au-prosjekt-ale",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:44:38.526Z",
+      "lastPushed": "2025-01-28T08:44:28Z",
+      "lastUpdate": "2025-11-10T17:44:38.526Z"
+    },
+    "auth-swagger-client": {
+      "name": "auth-swagger-client",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:44:52.407Z",
+      "lastPushed": "2024-01-18T14:15:59Z",
+      "lastUpdate": "2025-11-10T17:44:52.407Z"
+    },
+    "authentication": {
+      "name": "authentication",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:44:55.104Z",
+      "lastPushed": "2025-11-05T14:04:47Z",
+      "lastUpdate": "2025-11-10T17:44:55.104Z"
+    },
+    "avaje-ebeanorm": {
+      "name": "avaje-ebeanorm",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:44:57.773Z",
+      "lastPushed": "2022-09-29T10:06:00Z",
+      "lastUpdate": "2025-11-10T17:44:57.773Z"
+    },
+    "bachelor-sandbox": {
+      "name": "bachelor-sandbox",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:45:00.592Z",
+      "lastPushed": "2024-09-17T07:35:49Z",
+      "lastUpdate": "2025-11-10T17:45:00.592Z"
+    },
+    "bachelor-signering": {
+      "name": "bachelor-signering",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:45:03.357Z",
+      "lastPushed": "2025-06-04T08:08:00Z",
+      "lastUpdate": "2025-11-10T17:45:03.357Z"
+    },
+    "bachelor-signering-old": {
+      "name": "bachelor-signering-old",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:47:51.215Z",
+      "lastPushed": "2025-05-28T09:37:30Z",
+      "lastUpdate": "2025-11-10T17:47:51.216Z"
+    },
+    "bachelor-spring-security": {
+      "name": "bachelor-spring-security",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:47:54.030Z",
+      "lastPushed": "2025-06-04T07:13:58Z",
+      "lastUpdate": "2025-11-10T17:47:54.030Z"
+    },
+    "backstage": {
+      "name": "backstage",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:47:56.790Z",
+      "lastPushed": "2025-08-11T17:00:19Z",
+      "lastUpdate": "2025-11-10T17:47:56.790Z"
+    },
+    "backstage-config": {
+      "name": "backstage-config",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:47:59.350Z",
+      "lastPushed": "2025-08-21T11:43:13Z",
+      "lastUpdate": "2025-11-10T17:47:59.350Z"
+    },
+    "bashprofile": {
+      "name": "bashprofile",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:48:01.930Z",
+      "lastPushed": "2022-09-29T07:12:43Z",
+      "lastUpdate": "2025-11-10T17:48:01.930Z"
+    },
+    "batch": {
+      "name": "batch",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:50:20.430Z",
+      "lastPushed": "2022-09-29T07:12:55Z",
+      "lastUpdate": "2025-11-10T17:50:20.430Z"
+    },
+    "batman": {
+      "name": "batman",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:50:23.094Z",
+      "lastPushed": "2024-01-16T09:07:54Z",
+      "lastUpdate": "2025-11-10T17:50:23.094Z"
+    },
+    "bblepost": {
+      "name": "bblepost",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:50:26.061Z",
+      "lastPushed": "2023-07-19T23:16:26Z",
+      "lastUpdate": "2025-11-10T17:50:26.061Z"
+    },
+    "bbsclient": {
+      "name": "bbsclient",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:50:28.463Z",
+      "lastPushed": "2022-09-29T09:22:36Z",
+      "lastUpdate": "2025-11-10T17:50:28.463Z"
+    },
+    "bbtornado": {
+      "name": "bbtornado",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T17:50:30.940Z",
+      "lastPushed": "2022-09-29T09:20:19Z",
+      "lastUpdate": "2025-11-10T17:50:30.940Z"
+    },
+    "bedrock-bjarne": {
+      "name": "bedrock-bjarne",
+      "visibility": "private",
+      "status": "failed",
+      "lastChecked": "2025-11-10T18:17:15.773Z",
+      "lastPushed": "2025-11-03T14:51:18Z",
+      "lastUpdate": "2025-11-10T18:21:19.874Z",
+      "errorMessage": "[2025-11-10 19:21:19] [ERROR] A migration with the same target repo name has already been queued.\n",
+      "startedAt": "2025-11-10T18:21:19.874Z",
+      "endedAt": "2025-11-10T18:21:19.874Z",
+      "elapsedSeconds": 0
+    },
+    "bha-ambitau": {
+      "name": "bha-ambitau",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T18:17:19.095Z",
+      "lastPushed": "2025-02-12T13:14:13Z",
+      "lastUpdate": "2025-11-10T18:17:19.095Z"
+    },
+    "bha-utilities": {
+      "name": "bha-utilities",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T18:17:22.105Z",
+      "lastPushed": "2025-07-12T01:37:40Z",
+      "lastUpdate": "2025-11-10T18:17:22.105Z"
+    },
+    "bifrost": {
+      "name": "bifrost",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T18:17:24.832Z",
+      "lastPushed": "2022-09-29T08:54:34Z",
+      "lastUpdate": "2025-11-10T18:17:24.832Z"
+    },
+    "bifrost-ping": {
+      "name": "bifrost-ping",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T18:17:27.332Z",
+      "lastPushed": "2022-09-29T08:54:50Z",
+      "lastUpdate": "2025-11-10T18:17:27.332Z"
+    },
+    "billing": {
+      "name": "billing",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T18:21:05.933Z",
+      "lastPushed": "2025-11-10T14:52:34Z",
+      "lastUpdate": "2025-11-10T18:21:05.933Z"
+    },
+    "billing-correction": {
+      "name": "billing-correction",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T18:21:08.731Z",
+      "lastPushed": "2023-07-19T23:16:12Z",
+      "lastUpdate": "2025-11-10T18:21:08.731Z"
+    },
+    "billing-my-invoices": {
+      "name": "billing-my-invoices",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:49:47.973Z",
+      "lastPushed": "2025-08-18T14:12:35Z",
+      "lastUpdate": "2025-11-10T20:49:47.973Z",
+      "migrationId": "RM_kgDaACRkNjk5ZGFkMy1hMWQwLTQxMTctYTNiOC1iNzYzNGMyYjE1MGY",
+      "queuedAt": "2025-11-10T18:21:27.813Z",
+      "startedAt": "2025-11-10T18:21:27.813Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "billing-my-settlements": {
+      "name": "billing-my-settlements",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:49:51.079Z",
+      "lastPushed": "2025-08-18T13:34:34Z",
+      "lastUpdate": "2025-11-10T20:49:51.079Z",
+      "migrationId": "RM_kgDaACQ4MmQ0NDdjNS0yYmExLTRlYmQtODg2ZS1mYTBlOGRmMjc0ZmE",
+      "queuedAt": "2025-11-10T18:21:34.068Z",
+      "startedAt": "2025-11-10T18:21:34.068Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "boligmappawsclient": {
+      "name": "boligmappawsclient",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:49:53.870Z",
+      "lastPushed": "2022-09-29T08:55:03Z",
+      "lastUpdate": "2025-11-10T20:49:53.871Z",
+      "migrationId": "RM_kgDaACQ1ZDJhMDQxMS0zYWEzLTQ2NzMtOTBlOS1lNTdlNDU1YzVjNzg",
+      "queuedAt": "2025-11-10T18:21:41.196Z",
+      "startedAt": "2025-11-10T18:21:41.196Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "brreg-codegen": {
+      "name": "brreg-codegen",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:49:56.462Z",
+      "lastPushed": "2022-08-12T11:10:57Z",
+      "lastUpdate": "2025-11-10T20:49:56.462Z",
+      "migrationId": "RM_kgDaACQ4YWRjZDRhMS05ZDczLTQ4NGQtYTE1Ni1iNmYyYjVjYzNhODM",
+      "queuedAt": "2025-11-10T19:59:40.928Z",
+      "startedAt": "2025-11-10T19:59:40.928Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "brukerkatalog": {
+      "name": "brukerkatalog",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:49:58.994Z",
+      "lastPushed": "2022-09-29T08:55:20Z",
+      "lastUpdate": "2025-11-10T20:49:58.994Z",
+      "migrationId": "RM_kgDaACRiMzJlZDFmNC1mMzQ2LTQyNDMtODdhYy1hNDMyMGVmZGFhNmI",
+      "queuedAt": "2025-11-10T19:59:47.648Z",
+      "startedAt": "2025-11-10T19:59:47.648Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "bucketsync": {
+      "name": "bucketsync",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:01.766Z",
+      "lastPushed": "2023-07-07T21:39:55Z",
+      "lastUpdate": "2025-11-10T20:50:01.766Z",
+      "migrationId": "RM_kgDaACQ0ODk0Mzg3NC1iZGQ4LTQ5Y2UtOGMyNy1kZDdjODEyZDczOWE",
+      "queuedAt": "2025-11-10T19:59:54.167Z",
+      "startedAt": "2025-11-10T19:59:54.167Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "bus-reports": {
+      "name": "bus-reports",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:04.334Z",
+      "lastUpdate": "2025-11-10T20:50:04.334Z",
+      "migrationId": "RM_kgDaACQ5ZjVmM2FiYy1lMTVkLTRiNzAtOTBhMS1lNTQyOTFhNzVjMWY",
+      "queuedAt": "2025-11-10T20:00:01.250Z",
+      "startedAt": "2025-11-10T20:00:01.250Z",
+      "errorMessage": "Migration status not found - may have completed or failed",
+      "lastPushed": "2022-09-29T08:55:33Z"
+    },
+    "busfaktura-axapta-system-integration-test": {
+      "name": "busfaktura-axapta-system-integration-test",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:06.986Z",
+      "lastUpdate": "2025-11-10T20:50:06.986Z",
+      "migrationId": "RM_kgDaACRjNzlhYzA1Zi0zYzk4LTQwNTgtYWJhMS0xMWMwZjkxNmI2MjY",
+      "queuedAt": "2025-11-10T20:00:07.680Z",
+      "startedAt": "2025-11-10T20:00:07.680Z",
+      "errorMessage": "Migration status not found - may have completed or failed",
+      "lastPushed": "2022-09-29T08:55:48Z"
+    },
+    "button": {
+      "name": "button",
+      "visibility": "private",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:09.581Z",
+      "lastUpdate": "2025-11-10T20:50:09.581Z",
+      "migrationId": "RM_kgDaACQzYzgzNzUwZC00MDdkLTQyMDEtODQ4NS0zZTI2N2ZhNjZiNzA",
+      "queuedAt": "2025-11-10T20:00:15.078Z",
+      "startedAt": "2025-11-10T20:00:15.078Z",
+      "errorMessage": "Migration status not found - may have completed or failed",
+      "lastPushed": "2022-09-23T13:15:06Z"
+    },
+    "byggesoknaden-ai-backend": {
+      "name": "byggesoknaden-ai-backend",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:12.246Z",
+      "lastPushed": "2025-07-30T13:25:28Z",
+      "lastUpdate": "2025-11-10T20:50:12.246Z",
+      "migrationId": "RM_kgDaACQ2YTYxMmI5Yy1hODk2LTQ2ZjUtYmQ1YS1kMjZkZTcxZjI3MmY",
+      "queuedAt": "2025-11-10T20:07:44.203Z",
+      "startedAt": "2025-11-10T20:07:44.203Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "byggesoknaden-altinn": {
+      "name": "byggesoknaden-altinn",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:14.972Z",
+      "lastPushed": "2024-12-03T01:59:37Z",
+      "lastUpdate": "2025-11-10T20:50:14.972Z",
+      "migrationId": "RM_kgDaACQ4YWY3M2Q3YS1lNmVmLTQzZDctODczNC02MGE1YzRkY2VjNjY",
+      "queuedAt": "2025-11-10T20:07:50.925Z",
+      "startedAt": "2025-11-10T20:07:50.925Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "byggesoknaden-amplify": {
+      "name": "byggesoknaden-amplify",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:17.738Z",
+      "lastPushed": "2025-11-10T09:02:43Z",
+      "lastUpdate": "2025-11-10T20:50:17.738Z",
+      "migrationId": "RM_kgDaACQ3YmMxMDY1Ni04MGY1LTQ5NDItYTNmMi0zZTM3ZTRiYTQxNjE",
+      "queuedAt": "2025-11-10T20:07:57.394Z",
+      "startedAt": "2025-11-10T20:07:57.394Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "byggesoknaden-backend-asp": {
+      "name": "byggesoknaden-backend-asp",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:20.584Z",
+      "lastPushed": "2025-11-10T12:57:25Z",
+      "lastUpdate": "2025-11-10T20:50:20.584Z",
+      "migrationId": "RM_kgDaACRhMDMyMDQ5Zi00MjVhLTQ3OTAtYjk5ZC1kMmIwMTJlZmUyYzY",
+      "queuedAt": "2025-11-10T20:08:03.765Z",
+      "startedAt": "2025-11-10T20:08:03.765Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "byggesoknaden-database": {
+      "name": "byggesoknaden-database",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:23.223Z",
+      "lastPushed": "2025-08-05T13:33:11Z",
+      "lastUpdate": "2025-11-10T20:50:23.223Z",
+      "migrationId": "RM_kgDaACQ0MmU3MzVhNS0yNjRlLTQyY2MtODc0Yy1jYjIwNDIxNTQ2ZTY",
+      "queuedAt": "2025-11-10T20:08:10.263Z",
+      "startedAt": "2025-11-10T20:08:10.263Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "byggesoknaden-eflex": {
+      "name": "byggesoknaden-eflex",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:25.834Z",
+      "lastPushed": "2024-10-21T23:20:17Z",
+      "lastUpdate": "2025-11-10T20:50:25.834Z",
+      "migrationId": "RM_kgDaACRlMzhjZTg4Ni02NTVlLTQ2MGQtYjE3Yi04NTZmMWRjM2Y3YTY",
+      "queuedAt": "2025-11-10T20:08:16.754Z",
+      "startedAt": "2025-11-10T20:08:16.754Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "byggesoknaden-forside": {
+      "name": "byggesoknaden-forside",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:28.590Z",
+      "lastPushed": "2025-09-29T06:58:08Z",
+      "lastUpdate": "2025-11-10T20:50:28.590Z",
+      "migrationId": "RM_kgDaACRjYmU5NjNiZC1jYWZjLTQ3ZTItODVlOC04ZDNkMDhiNGVmZjg",
+      "queuedAt": "2025-11-10T20:08:22.851Z",
+      "startedAt": "2025-11-10T20:08:22.851Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "byggesoknaden-front": {
+      "name": "byggesoknaden-front",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:31.277Z",
+      "lastPushed": "2025-11-10T09:08:25Z",
+      "lastUpdate": "2025-11-10T20:50:31.277Z",
+      "migrationId": "RM_kgDaACRhZTQ5ODYwMi0yMDI4LTRhNzItYmVlNS03YjU1MTU1MjhhZDY",
+      "queuedAt": "2025-11-10T20:28:49.720Z",
+      "startedAt": "2025-11-10T20:28:49.720Z",
+      "lastPolledAt": "2025-11-10T20:29:10.647Z"
+    },
+    "byggesoknaden-integration": {
+      "name": "byggesoknaden-integration",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:33.969Z",
+      "lastPushed": "2025-10-17T11:24:51Z",
+      "lastUpdate": "2025-11-10T20:50:33.969Z",
+      "migrationId": "RM_kgDaACQ0Yzg1ZWFjYi00MWI5LTRkMmEtYTkxZi0yZTE3YjY4NGJmNTA",
+      "queuedAt": "2025-11-10T20:28:55.565Z",
+      "startedAt": "2025-11-10T20:28:55.565Z",
+      "lastPolledAt": "2025-11-10T20:29:11.482Z"
+    },
+    "byggesoknaden-keycloak": {
+      "name": "byggesoknaden-keycloak",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:36.865Z",
+      "lastPushed": "2023-10-19T13:11:45Z",
+      "lastUpdate": "2025-11-10T20:50:36.865Z",
+      "migrationId": "RM_kgDaACQ4NzE3YzczZS03OGZjLTQ0ZGMtODc0Yi0zNTM2YWNkYWE5MDU",
+      "queuedAt": "2025-11-10T20:29:03.248Z",
+      "startedAt": "2025-11-10T20:29:03.248Z",
+      "lastPolledAt": "2025-11-10T20:29:19.038Z"
+    },
+    "byggesoknaden-logging": {
+      "name": "byggesoknaden-logging",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:39.482Z",
+      "lastPushed": "2025-08-26T22:05:47Z",
+      "lastUpdate": "2025-11-10T20:50:39.482Z",
+      "migrationId": "RM_kgDaACQ1OTlmZmVlNC04ZjhiLTQ0NmQtYWI1YS1mMTE5NzJhNjFhMDk",
+      "queuedAt": "2025-11-10T20:29:09.422Z",
+      "startedAt": "2025-11-10T20:29:09.422Z",
+      "lastPolledAt": "2025-11-10T20:29:40.063Z"
+    },
+    "byggesoknaden-saksbehandlingsdata-aws": {
+      "name": "byggesoknaden-saksbehandlingsdata-aws",
+      "visibility": "internal",
+      "status": "synced",
+      "lastChecked": "2025-11-10T20:50:42.131Z",
+      "lastPushed": "2025-01-20T10:31:02Z",
+      "lastUpdate": "2025-11-10T20:50:42.131Z",
+      "migrationId": "RM_kgDaACRmOTEwOTI4NC05OWM5LTQzMzgtOWQ0My04Y2Y5MGI2MWRlOGI",
+      "queuedAt": "2025-11-10T20:29:15.535Z",
+      "startedAt": "2025-11-10T20:29:15.535Z",
+      "lastPolledAt": "2025-11-10T20:29:40.937Z"
+    },
+    "Byggesoknaden-Status": {
+      "name": "Byggesoknaden-Status",
+      "visibility": "internal",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:33:17.883Z",
+      "lastPushed": "2025-05-09T07:03:12Z",
+      "lastUpdate": "2025-11-10T20:33:17.883Z"
+    },
+    "byggesoknaden-support": {
+      "name": "byggesoknaden-support",
+      "visibility": "internal",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:33:19.313Z",
+      "lastPushed": "2025-04-11T08:14:28Z",
+      "lastUpdate": "2025-11-10T20:33:19.314Z"
+    },
+    "byggesoknaden-xml": {
+      "name": "byggesoknaden-xml",
+      "visibility": "internal",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:33:20.834Z",
+      "lastPushed": "2023-07-20T15:40:26Z",
+      "lastUpdate": "2025-11-10T20:33:20.834Z"
+    },
+    "byggesoknaden_email_service": {
+      "name": "byggesoknaden_email_service",
+      "visibility": "internal",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:33:22.415Z",
+      "lastPushed": "2025-03-25T12:10:45Z",
+      "lastUpdate": "2025-11-10T20:33:22.415Z"
+    },
+    "cbm": {
+      "name": "cbm",
+      "visibility": "private",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:33:24.086Z",
+      "lastPushed": "2025-02-25T08:48:44Z",
+      "lastUpdate": "2025-11-10T20:33:24.086Z"
+    },
+    "cdk-dto-geonetwork": {
+      "name": "cdk-dto-geonetwork",
+      "visibility": "private",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:33:53.947Z",
+      "lastPushed": "2023-07-20T02:06:31Z",
+      "lastUpdate": "2025-11-10T20:33:53.947Z"
+    },
+    "cdk-elastic": {
+      "name": "cdk-elastic",
+      "visibility": "internal",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:33:55.574Z",
+      "lastPushed": "2025-06-05T07:58:48Z",
+      "lastUpdate": "2025-11-10T20:33:55.574Z"
+    },
+    "cdk-hat-ec2": {
+      "name": "cdk-hat-ec2",
+      "visibility": "internal",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:33:57.145Z",
+      "lastPushed": "2023-11-21T15:14:09Z",
+      "lastUpdate": "2025-11-10T20:33:57.145Z"
+    },
+    "cdk-integration-vitec": {
+      "name": "cdk-integration-vitec",
+      "visibility": "private",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:33:58.599Z",
+      "lastPushed": "2025-03-05T13:47:30Z",
+      "lastUpdate": "2025-11-10T20:33:58.599Z"
+    },
+    "changelogs": {
+      "name": "changelogs",
+      "visibility": "private",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:34:01.114Z",
+      "lastPushed": "2022-06-24T06:43:57Z",
+      "lastUpdate": "2025-11-10T20:34:01.114Z"
+    },
+    "commands": {
+      "name": "commands",
+      "visibility": "internal",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:34:14.359Z",
+      "lastPushed": "2025-10-29T11:32:20Z",
+      "lastUpdate": "2025-11-10T20:34:14.359Z"
+    },
+    "common-ts": {
+      "name": "common-ts",
+      "visibility": "private",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:34:15.813Z",
+      "lastPushed": "2025-11-10T12:31:16Z",
+      "lastUpdate": "2025-11-10T20:34:15.813Z"
+    },
+    "compare-axapta-transactions": {
+      "name": "compare-axapta-transactions",
+      "visibility": "internal",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:34:17.316Z",
+      "lastPushed": "2022-09-29T08:56:01Z",
+      "lastUpdate": "2025-11-10T20:34:17.316Z"
+    },
+    "configuration": {
+      "name": "configuration",
+      "visibility": "private",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:34:19.130Z",
+      "lastPushed": "2023-06-16T06:29:12Z",
+      "lastUpdate": "2025-11-10T20:34:19.130Z"
+    },
+    "consumption-bootstrap-prototype": {
+      "name": "consumption-bootstrap-prototype",
+      "visibility": "internal",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:34:20.666Z",
+      "lastPushed": "2022-09-29T08:56:15Z",
+      "lastUpdate": "2025-11-10T20:34:20.666Z"
+    },
+    "CookiebotToPiwik": {
+      "name": "CookiebotToPiwik",
+      "visibility": "private",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:40:16.100Z",
+      "lastPushed": "2024-11-11T11:18:42Z",
+      "lastUpdate": "2025-11-10T20:40:16.100Z"
+    },
+    "core-account": {
+      "name": "core-account",
+      "visibility": "private",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:40:17.771Z",
+      "lastPushed": "2025-11-10T09:14:13Z",
+      "lastUpdate": "2025-11-10T20:40:17.771Z"
+    },
+    "cri-ambita": {
+      "name": "cri-ambita",
+      "visibility": "private",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:40:19.326Z",
+      "lastPushed": "2025-05-27T07:36:17Z",
+      "lastUpdate": "2025-11-10T20:40:19.326Z"
+    },
+    "ctrlinvoice": {
+      "name": "ctrlinvoice",
+      "visibility": "internal",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:40:20.781Z",
+      "lastPushed": "2022-09-29T08:56:29Z",
+      "lastUpdate": "2025-11-10T20:40:20.781Z"
+    },
+    "daas-datacatalog": {
+      "name": "daas-datacatalog",
+      "visibility": "private",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:40:22.632Z",
+      "lastPushed": "2023-10-04T19:34:48Z",
+      "lastUpdate": "2025-11-10T20:40:22.632Z"
+    },
+    "daas-datacatalogue": {
+      "name": "daas-datacatalogue",
+      "visibility": "private",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:50:43.628Z",
+      "lastPushed": "2024-12-01T00:38:06Z",
+      "lastUpdate": "2025-11-10T20:50:43.628Z"
+    },
+    "daas-dbt-test": {
+      "name": "daas-dbt-test",
+      "visibility": "private",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:50:45.113Z",
+      "lastPushed": "2024-01-22T12:13:54Z",
+      "lastUpdate": "2025-11-10T20:50:45.113Z"
+    },
+    "dad": {
+      "name": "dad",
+      "visibility": "private",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:50:46.748Z",
+      "lastPushed": "2025-02-25T09:06:45Z",
+      "lastUpdate": "2025-11-10T20:50:46.748Z"
+    },
+    "data-corrections": {
+      "name": "data-corrections",
+      "visibility": "private",
+      "status": "needs_migration",
+      "lastChecked": "2025-11-10T20:50:48.293Z",
+      "lastPushed": "2025-11-10T07:55:26Z",
+      "lastUpdate": "2025-11-10T20:50:48.293Z"
+    },
+    "databaseskjema": {
+      "name": "databaseskjema",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "datacatalog-api": {
+      "name": "datacatalog-api",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "datacatalog-formation": {
+      "name": "datacatalog-formation",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "datacatalog-ui": {
+      "name": "datacatalog-ui",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "datatjenester-gui-bachelor": {
+      "name": "datatjenester-gui-bachelor",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "datatjenester-gui-bachelor-final": {
+      "name": "datatjenester-gui-bachelor-final",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "datatjenester-gui-playground": {
+      "name": "datatjenester-gui-playground",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "datatjenester-gui-template": {
+      "name": "datatjenester-gui-template",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "db2_to_postgresql": {
+      "name": "db2_to_postgresql",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "dbt-load-billing": {
+      "name": "dbt-load-billing",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "dbt-transform-billing": {
+      "name": "dbt-transform-billing",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "dbt-transform-invoicebasis": {
+      "name": "dbt-transform-invoicebasis",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "dbt-transform-sikri": {
+      "name": "dbt-transform-sikri",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "dbt_load_invoicebasis": {
+      "name": "dbt_load_invoicebasis",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "dbt_transform_aws": {
+      "name": "dbt_transform_aws",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "dbt_transform_eflyt": {
+      "name": "dbt_transform_eflyt",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "dbt_transform_kundeflyt": {
+      "name": "dbt_transform_kundeflyt",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "db_cmp": {
+      "name": "db_cmp",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "db_replikering": {
+      "name": "db_replikering",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "db_triggergenerator": {
+      "name": "db_triggergenerator",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "delivery-htmltopdf": {
+      "name": "delivery-htmltopdf",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "delivery-replazer": {
+      "name": "delivery-replazer",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "delivery-unzipper": {
+      "name": "delivery-unzipper",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "delivery-xml": {
+      "name": "delivery-xml",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "deliveryfilemonitor": {
+      "name": "deliveryfilemonitor",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "deliverymock": {
+      "name": "deliverymock",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "deliverymockinfoland": {
+      "name": "deliverymockinfoland",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "demo-repository": {
+      "name": "demo-repository",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "dependency-tracker": {
+      "name": "dependency-tracker",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "design-system-icons": {
+      "name": "design-system-icons",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "design-system-vue-2": {
+      "name": "design-system-vue-2",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "design-system-vue-3": {
+      "name": "design-system-vue-3",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "design-tokens": {
+      "name": "design-tokens",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "dkn": {
+      "name": "dkn",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "dkn-demo": {
+      "name": "dkn-demo",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "dma": {
+      "name": "dma",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "dma-backend": {
+      "name": "dma-backend",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "DMS": {
+      "name": "DMS",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "dms-vue3": {
+      "name": "dms-vue3",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "documentation": {
+      "name": "documentation",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "dwh_sql_statements": {
+      "name": "dwh_sql_statements",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "e-tinglysing-afpant": {
+      "name": "e-tinglysing-afpant",
+      "visibility": "public",
+      "status": "unknown"
+    },
+    "ea": {
+      "name": "ea",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "eaa": {
+      "name": "eaa",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "EAA2": {
+      "name": "EAA2",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "eddie": {
+      "name": "eddie",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "edr-components": {
+      "name": "edr-components",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "edr-snowflake": {
+      "name": "edr-snowflake",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "edr2elastic": {
+      "name": "edr2elastic",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "edr2realty": {
+      "name": "edr2realty",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "edr4_database_patches": {
+      "name": "edr4_database_patches",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "edrdb": {
+      "name": "edrdb",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "edrdsf": {
+      "name": "edrdsf",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "edr_2_postgis": {
+      "name": "edr_2_postgis",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "edr_map_demo": {
+      "name": "edr_map_demo",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "edr_materialized_views": {
+      "name": "edr_materialized_views",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "edr_to_pgsql": {
+      "name": "edr_to_pgsql",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "eflyt-bankid": {
+      "name": "eflyt-bankid",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "eflyt-dsf-client": {
+      "name": "eflyt-dsf-client",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "eflyt-ses-monitor": {
+      "name": "eflyt-ses-monitor",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "eflyt-utilities": {
+      "name": "eflyt-utilities",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "eflytKonfigurering": {
+      "name": "eflytKonfigurering",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "efullmakt": {
+      "name": "efullmakt",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "ehandel-client": {
+      "name": "ehandel-client",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "eiendomnorgedata": {
+      "name": "eiendomnorgedata",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "EiendomsData-Bachelor": {
+      "name": "EiendomsData-Bachelor",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "eiendomsinforoot": {
+      "name": "eiendomsinforoot",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "eks-cluster-mgmt": {
+      "name": "eks-cluster-mgmt",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "email-templates": {
+      "name": "email-templates",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "emailwithjsondata": {
+      "name": "emailwithjsondata",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "enforce": {
+      "name": "enforce",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "eps": {
+      "name": "eps",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "erine": {
+      "name": "erine",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "esign2": {
+      "name": "esign2",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "esignering": {
+      "name": "esignering",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "esignering-acceptance-tests": {
+      "name": "esignering-acceptance-tests",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "esignering-incident": {
+      "name": "esignering-incident",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "EsignFargateDemo": {
+      "name": "EsignFargateDemo",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "esignoidc": {
+      "name": "esignoidc",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "eslint-config": {
+      "name": "eslint-config",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "esv": {
+      "name": "esv",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "esv-ambita-u-250527": {
+      "name": "esv-ambita-u-250527",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "esvir": {
+      "name": "esvir",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "esvir-bid-scripts": {
+      "name": "esvir-bid-scripts",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "esvir-bidchecker": {
+      "name": "esvir-bidchecker",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "esvir-buckets": {
+      "name": "esvir-buckets",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "esvir-buckets-jsk": {
+      "name": "esvir-buckets-jsk",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "esvir-hat": {
+      "name": "esvir-hat",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "esvir-puppet-config": {
+      "name": "esvir-puppet-config",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "eting-acceptance-tests": {
+      "name": "eting-acceptance-tests",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "eting-restapi-sdk": {
+      "name": "eting-restapi-sdk",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "etinglysing": {
+      "name": "etinglysing",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "etinglysing-openapi-spec": {
+      "name": "etinglysing-openapi-spec",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "etinglysing-wsdl": {
+      "name": "etinglysing-wsdl",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "etinglysing.edronline2": {
+      "name": "etinglysing.edronline2",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "etview": {
+      "name": "etview",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "event-consumer-poc": {
+      "name": "event-consumer-poc",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "event-producer-poc": {
+      "name": "event-producer-poc",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "experian_soap_poc": {
+      "name": "experian_soap_poc",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "externaltestservice": {
+      "name": "externaltestservice",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "extraction-qa": {
+      "name": "extraction-qa",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "extraction-sam": {
+      "name": "extraction-sam",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "faktspeshent": {
+      "name": "faktspeshent",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "fakturaspesifikasjon-analyse": {
+      "name": "fakturaspesifikasjon-analyse",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "far": {
+      "name": "far",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "fastai-sagemaker-container": {
+      "name": "fastai-sagemaker-container",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "fbo": {
+      "name": "fbo",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "featuretoggle": {
+      "name": "featuretoggle",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "felles-brreg-wsclient": {
+      "name": "felles-brreg-wsclient",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "felles-demo": {
+      "name": "felles-demo",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "felles-edrklient": {
+      "name": "felles-edrklient",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "felles-email-templates": {
+      "name": "felles-email-templates",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "felles-neutils": {
+      "name": "felles-neutils",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "felles-one": {
+      "name": "felles-one",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "felles-one-system": {
+      "name": "felles-one-system",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "felles-orderingforms": {
+      "name": "felles-orderingforms",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "felles-priskalkulator": {
+      "name": "felles-priskalkulator",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "felles-produktkatalog": {
+      "name": "felles-produktkatalog",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "felles-script": {
+      "name": "felles-script",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "felles-sqls": {
+      "name": "felles-sqls",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "felles-trans-environment-brigde": {
+      "name": "felles-trans-environment-brigde",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "felles-visualization": {
+      "name": "felles-visualization",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "file-delivery": {
+      "name": "file-delivery",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "file-delivery-file-entries": {
+      "name": "file-delivery-file-entries",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "file-delivery-SFTP-sync": {
+      "name": "file-delivery-SFTP-sync",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "fileDelivery-AutomaticDeliveryBLF": {
+      "name": "fileDelivery-AutomaticDeliveryBLF",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "filtjeneste": {
+      "name": "filtjeneste",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "filutveksling": {
+      "name": "filutveksling",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "finance-hub": {
+      "name": "finance-hub",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "fjern-altinn-status": {
+      "name": "fjern-altinn-status",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "fontawesome": {
+      "name": "fontawesome",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "fontawesome-free-brands-svg-icons": {
+      "name": "fontawesome-free-brands-svg-icons",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "fontawesome-pro": {
+      "name": "fontawesome-pro",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "fontawesome-pro-light-svg-icons": {
+      "name": "fontawesome-pro-light-svg-icons",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "fontawesome-pro-regular-svg-icons": {
+      "name": "fontawesome-pro-regular-svg-icons",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "fontawesome-pro-solid-svg-icons": {
+      "name": "fontawesome-pro-solid-svg-icons",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "fontawesome-svg-core": {
+      "name": "fontawesome-svg-core",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "formatters": {
+      "name": "formatters",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "former2": {
+      "name": "former2",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "Forside-Infoland-EvenTveit": {
+      "name": "Forside-Infoland-EvenTveit",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "frobo-vivid-test": {
+      "name": "frobo-vivid-test",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "frontend-test": {
+      "name": "frontend-test",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "frontend-vue2-starter": {
+      "name": "frontend-vue2-starter",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "frontend-vue3-starter": {
+      "name": "frontend-vue3-starter",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "fyringsanlegg": {
+      "name": "fyringsanlegg",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "gapi": {
+      "name": "gapi",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "geonorge_kodelister_aws": {
+      "name": "geonorge_kodelister_aws",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "geoserver-ambitakey": {
+      "name": "geoserver-ambitakey",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "geotoolsutil": {
+      "name": "geotoolsutil",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "gg": {
+      "name": "gg",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "gh-actions-workshop": {
+      "name": "gh-actions-workshop",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "gisanalysisclient": {
+      "name": "gisanalysisclient",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "gisclient2rest": {
+      "name": "gisclient2rest",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "gislineclient": {
+      "name": "gislineclient",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "gis_utils": {
+      "name": "gis_utils",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "github-backup-silver": {
+      "name": "github-backup-silver",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "github-compliance": {
+      "name": "github-compliance",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "githubActionsTest": {
+      "name": "githubActionsTest",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "githubbackup": {
+      "name": "githubbackup",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "Github_actions_test_project": {
+      "name": "Github_actions_test_project",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "golden": {
+      "name": "golden",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "golden-bastion": {
+      "name": "golden-bastion",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "golden-docs": {
+      "name": "golden-docs",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "golden-path-ecs": {
+      "name": "golden-path-ecs",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "golden-path-ecs-cdk": {
+      "name": "golden-path-ecs-cdk",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "Golden-ses-logger": {
+      "name": "Golden-ses-logger",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "golden-status": {
+      "name": "golden-status",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "golden-test": {
+      "name": "golden-test",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "golden-trainwreck": {
+      "name": "golden-trainwreck",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "gp-container-template": {
+      "name": "gp-container-template",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "gp-container-workflows": {
+      "name": "gp-container-workflows",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "grafana": {
+      "name": "grafana",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "groovy": {
+      "name": "groovy",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "header-detection": {
+      "name": "header-detection",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "header_classification": {
+      "name": "header_classification",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "header_nn_classification": {
+      "name": "header_nn_classification",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "hiera": {
+      "name": "hiera",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "hme": {
+      "name": "hme",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "hmeide-ambita-u-gh-actions": {
+      "name": "hmeide-ambita-u-gh-actions",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "housing_value": {
+      "name": "housing_value",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "hunkoder": {
+      "name": "hunkoder",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "icinga-zones": {
+      "name": "icinga-zones",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "ier": {
+      "name": "ier",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "ier-gh-actions": {
+      "name": "ier-gh-actions",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "ier-vivid-thing": {
+      "name": "ier-vivid-thing",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "iktagderwsclient": {
+      "name": "iktagderwsclient",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "il-deliverymock": {
+      "name": "il-deliverymock",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "il-monitor": {
+      "name": "il-monitor",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "il_forhandler": {
+      "name": "il_forhandler",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "image_magick_layer": {
+      "name": "image_magick_layer",
+      "visibility": "public",
+      "status": "unknown"
+    },
+    "ine": {
+      "name": "ine",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-actions-testproject": {
+      "name": "infoland-actions-testproject",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-alarm-handler": {
+      "name": "infoland-alarm-handler",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-api": {
+      "name": "infoland-api",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-backend": {
+      "name": "infoland-backend",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-blocks": {
+      "name": "infoland-blocks",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-components": {
+      "name": "infoland-components",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-devops": {
+      "name": "infoland-devops",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-eflex": {
+      "name": "infoland-eflex",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-email-service": {
+      "name": "infoland-email-service",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-email-service-logger": {
+      "name": "infoland-email-service-logger",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "infoland-frontend-web": {
+      "name": "infoland-frontend-web",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-gate-in": {
+      "name": "infoland-gate-in",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-github-actions": {
+      "name": "infoland-github-actions",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-mflex": {
+      "name": "infoland-mflex",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-redis": {
+      "name": "infoland-redis",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "infoland-scripts": {
+      "name": "infoland-scripts",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "infoland-search": {
+      "name": "infoland-search",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-sls-plugin": {
+      "name": "infoland-sls-plugin",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "infoland-test-repo": {
+      "name": "infoland-test-repo",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-webservices": {
+      "name": "infoland-webservices",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "infoland-ws": {
+      "name": "infoland-ws",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "InfolandUpdateProductFilter": {
+      "name": "InfolandUpdateProductFilter",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "inmisc": {
+      "name": "inmisc",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "inndata_erine": {
+      "name": "inndata_erine",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "inndata_grunnbok_stubs": {
+      "name": "inndata_grunnbok_stubs",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "inndata_grunnbok_stubs_ident": {
+      "name": "inndata_grunnbok_stubs_ident",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "inndata_matrikkelbehandler": {
+      "name": "inndata_matrikkelbehandler",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "inndata_matrikkelen_stubs": {
+      "name": "inndata_matrikkelen_stubs",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "inndata_matrikkelleser": {
+      "name": "inndata_matrikkelleser",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "inndata_person": {
+      "name": "inndata_person",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "inndiv": {
+      "name": "inndiv",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "inne": {
+      "name": "inne",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "inpost": {
+      "name": "inpost",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "integration-evry": {
+      "name": "integration-evry",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "integration-garanti": {
+      "name": "integration-garanti",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "integrator_dispatcher": {
+      "name": "integrator_dispatcher",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "isabella": {
+      "name": "isabella",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "ivoice": {
+      "name": "ivoice",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "jackson-module-scala": {
+      "name": "jackson-module-scala",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "jam": {
+      "name": "jam",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "jarltest": {
+      "name": "jarltest",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "java8workshop": {
+      "name": "java8workshop",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "javatestcontainers": {
+      "name": "javatestcontainers",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "jhe": {
+      "name": "jhe",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "jsk": {
+      "name": "jsk",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "jsk-oidc": {
+      "name": "jsk-oidc",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "jskold": {
+      "name": "jskold",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "json_schema": {
+      "name": "json_schema",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "k8s-plattform": {
+      "name": "k8s-plattform",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "keycloak": {
+      "name": "keycloak",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "kf-prisreg": {
+      "name": "kf-prisreg",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "kf-scripts": {
+      "name": "kf-scripts",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "kode-api": {
+      "name": "kode-api",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "kode-shop": {
+      "name": "kode-shop",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "kode-supplier-portal": {
+      "name": "kode-supplier-portal",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "koderegister": {
+      "name": "koderegister",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "koderegister-maven-plugin": {
+      "name": "koderegister-maven-plugin",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "komtekclient": {
+      "name": "komtekclient",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "kundeflyt-sisyphus": {
+      "name": "kundeflyt-sisyphus",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "lab_pdf_df": {
+      "name": "lab_pdf_df",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "lab_pdf_func": {
+      "name": "lab_pdf_func",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "lab_pdf_functions": {
+      "name": "lab_pdf_functions",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "lab_pdf_nn": {
+      "name": "lab_pdf_nn",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "lab_pdf_ocr": {
+      "name": "lab_pdf_ocr",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "lab_pdf_support": {
+      "name": "lab_pdf_support",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "lab_pf_display": {
+      "name": "lab_pf_display",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "lab_textract_func": {
+      "name": "lab_textract_func",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "lambda-warmer": {
+      "name": "lambda-warmer",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "lambda_layers": {
+      "name": "lambda_layers",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "learn-docker": {
+      "name": "learn-docker",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "learn-git": {
+      "name": "learn-git",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "leveransemottak": {
+      "name": "leveransemottak",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "leveransemottak-samtest": {
+      "name": "leveransemottak-samtest",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "leveransetilpasning": {
+      "name": "leveransetilpasning",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "lmr": {
+      "name": "lmr",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "loadtesting-gatlin": {
+      "name": "loadtesting-gatlin",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "loadtesting-jmeter": {
+      "name": "loadtesting-jmeter",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "logfacesresponstimeparser": {
+      "name": "logfacesresponstimeparser",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "login-component-vue3": {
+      "name": "login-component-vue3",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "logstash-maven-plugin": {
+      "name": "logstash-maven-plugin",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "logviewer": {
+      "name": "logviewer",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "loki": {
+      "name": "loki",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "loki-workshop": {
+      "name": "loki-workshop",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "loks": {
+      "name": "loks",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "loksabn": {
+      "name": "loksabn",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "longeco": {
+      "name": "longeco",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "longeco-bitbucket": {
+      "name": "longeco-bitbucket",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "maja-vue3-test": {
+      "name": "maja-vue3-test",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "maja-vue3-workshop": {
+      "name": "maja-vue3-workshop",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "mapaidclient": {
+      "name": "mapaidclient",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "matbe": {
+      "name": "matbe",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "matles": {
+      "name": "matles",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "maven": {
+      "name": "maven",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "meglerassistent": {
+      "name": "meglerassistent",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "meglerassistent-backend": {
+      "name": "meglerassistent-backend",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "message-duplicator": {
+      "name": "message-duplicator",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "meta_monitor": {
+      "name": "meta_monitor",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "meta_realty": {
+      "name": "meta_realty",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "meta_samhandling": {
+      "name": "meta_samhandling",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "mime": {
+      "name": "mime",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "mime_innsyn": {
+      "name": "mime_innsyn",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "mitt-ambita-university-prosjekt": {
+      "name": "mitt-ambita-university-prosjekt",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "MittProsjekt": {
+      "name": "MittProsjekt",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "mjt": {
+      "name": "mjt",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "modell_dsl": {
+      "name": "modell_dsl",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "monabot": {
+      "name": "monabot",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "monitor": {
+      "name": "monitor",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "monitorinfoland": {
+      "name": "monitorinfoland",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "mso": {
+      "name": "mso",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "mso-graphql": {
+      "name": "mso-graphql",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "mso_ambita_uni_vue": {
+      "name": "mso_ambita_uni_vue",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "municipal-shield-scraper": {
+      "name": "municipal-shield-scraper",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "my-ambita-project": {
+      "name": "my-ambita-project",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "my-billing": {
+      "name": "my-billing",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "my-component-api": {
+      "name": "my-component-api",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "necommonlite": {
+      "name": "necommonlite",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "neddie": {
+      "name": "neddie",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "neresources-debug": {
+      "name": "neresources-debug",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "neresources-itest": {
+      "name": "neresources-itest",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "neresources-prod": {
+      "name": "neresources-prod",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "neresources-test": {
+      "name": "neresources-test",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "netaxeptclient": {
+      "name": "netaxeptclient",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "new": {
+      "name": "new",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "nexus": {
+      "name": "nexus",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "nhe": {
+      "name": "nhe",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "ninjaoftheday": {
+      "name": "ninjaoftheday",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "norges-eiendommer": {
+      "name": "norges-eiendommer",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "norkart-product-diff": {
+      "name": "norkart-product-diff",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "npm-fontawesome": {
+      "name": "npm-fontawesome",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "npm-fontawesome-common-types": {
+      "name": "npm-fontawesome-common-types",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "npm-fontawesome-free-brands": {
+      "name": "npm-fontawesome-free-brands",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "npm-fontawesome-pro-light": {
+      "name": "npm-fontawesome-pro-light",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "npm-fontawesome-pro-regular": {
+      "name": "npm-fontawesome-pro-regular",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "npm-fontawesome-pro-solid": {
+      "name": "npm-fontawesome-pro-solid",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "npm-fontawesome.5.3.1_fontawesome-pro": {
+      "name": "npm-fontawesome.5.3.1_fontawesome-pro",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "npm-fontawesome.5.3.1_fontawesome-svg-core": {
+      "name": "npm-fontawesome.5.3.1_fontawesome-svg-core",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "npm-fontawesome.5.3.1_free-brands-svg-icons": {
+      "name": "npm-fontawesome.5.3.1_free-brands-svg-icons",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "npm-fontawesome.5.3.1_pro-light-svg-icons": {
+      "name": "npm-fontawesome.5.3.1_pro-light-svg-icons",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "npm-fontawesome.5.3.1_pro-regular-svg-icons": {
+      "name": "npm-fontawesome.5.3.1_pro-regular-svg-icons",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "npm-fontawesome.5.3.1_pro-solid-svg-icons": {
+      "name": "npm-fontawesome.5.3.1_pro-solid-svg-icons",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "npr": {
+      "name": "npr",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "ocr_pipeline": {
+      "name": "ocr_pipeline",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "oculus": {
+      "name": "oculus",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "ofo": {
+      "name": "ofo",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "ofs": {
+      "name": "ofs",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "oido": {
+      "name": "oido",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "oms-common": {
+      "name": "oms-common",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "oms-nop": {
+      "name": "oms-nop",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "oms-pmr": {
+      "name": "oms-pmr",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "oms-pms": {
+      "name": "oms-pms",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "omsetning_stjerne": {
+      "name": "omsetning_stjerne",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "onboarding": {
+      "name": "onboarding",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "onboarding-front": {
+      "name": "onboarding-front",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "online": {
+      "name": "online",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "online_site": {
+      "name": "online_site",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "opensearch-cdk": {
+      "name": "opensearch-cdk",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "oppslag_matrikkelen": {
+      "name": "oppslag_matrikkelen",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "order-collection-files-report": {
+      "name": "order-collection-files-report",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "order-collection-merge-pdf": {
+      "name": "order-collection-merge-pdf",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "order-management-system": {
+      "name": "order-management-system",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "order-persister": {
+      "name": "order-persister",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "order-utils": {
+      "name": "order-utils",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderProcessor": {
+      "name": "OrderProcessor",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderProcessor-ParseBillingOrderCollectionCorrected": {
+      "name": "OrderProcessor-ParseBillingOrderCollectionCorrected",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "OrderSystem": {
+      "name": "OrderSystem",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-BBLBestilling": {
+      "name": "OrderSystem-BBLBestilling",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-BBLPivotal": {
+      "name": "OrderSystem-BBLPivotal",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-Boligmappa": {
+      "name": "OrderSystem-Boligmappa",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-Brreg": {
+      "name": "OrderSystem-Brreg",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-Datamann-Brann": {
+      "name": "OrderSystem-Datamann-Brann",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-DeliverProductFiles": {
+      "name": "OrderSystem-DeliverProductFiles",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-Eiendomsprofil": {
+      "name": "OrderSystem-Eiendomsprofil",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-EmailCustomer": {
+      "name": "OrderSystem-EmailCustomer",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "OrderSystem-EmailSupplier": {
+      "name": "OrderSystem-EmailSupplier",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "OrderSystem-Fakturagebyr": {
+      "name": "OrderSystem-Fakturagebyr",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "OrderSystem-Ferdigattest": {
+      "name": "OrderSystem-Ferdigattest",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-FinishFeeProduct": {
+      "name": "OrderSystem-FinishFeeProduct",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-FinishOrderLine": {
+      "name": "OrderSystem-FinishOrderLine",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-FinishOrderlineWithoutAssetsSupplier": {
+      "name": "OrderSystem-FinishOrderlineWithoutAssetsSupplier",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-GeoDoc": {
+      "name": "OrderSystem-GeoDoc",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "OrderSystem-Illink4bergen": {
+      "name": "OrderSystem-Illink4bergen",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-Job-ChangeResponsible": {
+      "name": "OrderSystem-Job-ChangeResponsible",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "OrderSystem-Job-DeleteOldShoppingBags": {
+      "name": "OrderSystem-Job-DeleteOldShoppingBags",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "OrderSystem-Job-FinishHangingOrderCollection": {
+      "name": "OrderSystem-Job-FinishHangingOrderCollection",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "OrderSystem-Job-FixIncosistentOrderStatus": {
+      "name": "OrderSystem-Job-FixIncosistentOrderStatus",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "OrderSystem-Job-NotifyResponsible": {
+      "name": "OrderSystem-Job-NotifyResponsible",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "OrderSystem-KartverketBestillling": {
+      "name": "OrderSystem-KartverketBestillling",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-KotiBestilling": {
+      "name": "OrderSystem-KotiBestilling",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "OrderSystem-Ligningsverdi": {
+      "name": "OrderSystem-Ligningsverdi",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-ManuellMeglerpakke": {
+      "name": "OrderSystem-ManuellMeglerpakke",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-MatrikkelKordinatFil": {
+      "name": "OrderSystem-MatrikkelKordinatFil",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-MockOrder": {
+      "name": "OrderSystem-MockOrder",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-MockOrderLine": {
+      "name": "OrderSystem-MockOrderLine",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "ordersystem-module-proactiv": {
+      "name": "ordersystem-module-proactiv",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-NabolisteEDRBestilling": {
+      "name": "OrderSystem-NabolisteEDRBestilling",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-NorkartBestilling": {
+      "name": "OrderSystem-NorkartBestilling",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-OmsetningerRapport": {
+      "name": "OrderSystem-OmsetningerRapport",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-OnProperty": {
+      "name": "OrderSystem-OnProperty",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "Ordersystem-OsloPBE": {
+      "name": "Ordersystem-OsloPBE",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-PersonPropertyReport": {
+      "name": "OrderSystem-PersonPropertyReport",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-PowelWS": {
+      "name": "OrderSystem-PowelWS",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-RealtyNedlasting": {
+      "name": "OrderSystem-RealtyNedlasting",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-ReMidt": {
+      "name": "OrderSystem-ReMidt",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-ReportGeneratorRiot": {
+      "name": "OrderSystem-ReportGeneratorRiot",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-SFTPArchiveFileByFilter": {
+      "name": "OrderSystem-SFTPArchiveFileByFilter",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-SFTPArchiveFileLatest": {
+      "name": "OrderSystem-SFTPArchiveFileLatest",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-SOSIFil": {
+      "name": "OrderSystem-SOSIFil",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-StandardEmail": {
+      "name": "OrderSystem-StandardEmail",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-UploadStandardFiles": {
+      "name": "OrderSystem-UploadStandardFiles",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-VGSystemfile": {
+      "name": "OrderSystem-VGSystemfile",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "OrderSystem-WebServiceBestilling": {
+      "name": "OrderSystem-WebServiceBestilling",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "overview-components": {
+      "name": "overview-components",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "password_hash_poc": {
+      "name": "password_hash_poc",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "pay": {
+      "name": "pay",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "pdf-from-template-generator-function": {
+      "name": "pdf-from-template-generator-function",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "pdf-validator-api": {
+      "name": "pdf-validator-api",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "per": {
+      "name": "per",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "pipeline-poc": {
+      "name": "pipeline-poc",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "pixedit-token-handler": {
+      "name": "pixedit-token-handler",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "platform-demo-code": {
+      "name": "platform-demo-code",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "play-29-ebeans": {
+      "name": "play-29-ebeans",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "play-java-hello-world-tutorial": {
+      "name": "play-java-hello-world-tutorial",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "play2-action-plugin": {
+      "name": "play2-action-plugin",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "play2-auth-plugin": {
+      "name": "play2-auth-plugin",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "play2-base-external": {
+      "name": "play2-base-external",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "play2-billing-plugin": {
+      "name": "play2-billing-plugin",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "play2-cache-util": {
+      "name": "play2-cache-util",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "play2-crypto-plugin": {
+      "name": "play2-crypto-plugin",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "play2-email-plugin": {
+      "name": "play2-email-plugin",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "play2-gis-plugin": {
+      "name": "play2-gis-plugin",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "play2-msg-plugin": {
+      "name": "play2-msg-plugin",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "play2-pay-plugin": {
+      "name": "play2-pay-plugin",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "play2-price-plugin": {
+      "name": "play2-price-plugin",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "play2-product-plugin": {
+      "name": "play2-product-plugin",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "play2-realty-plugin": {
+      "name": "play2-realty-plugin",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "play2-register-plugin": {
+      "name": "play2-register-plugin",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "play2-s3-plugin": {
+      "name": "play2-s3-plugin",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "play2-time-util": {
+      "name": "play2-time-util",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "play2-token-v1-plugin": {
+      "name": "play2-token-v1-plugin",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "play2-ws-requester": {
+      "name": "play2-ws-requester",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "play2-xml-plugin": {
+      "name": "play2-xml-plugin",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "play2_felles_login": {
+      "name": "play2_felles_login",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "play2_template": {
+      "name": "play2_template",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "play_mime": {
+      "name": "play_mime",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "play_replikering": {
+      "name": "play_replikering",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "poc-api-design-system": {
+      "name": "poc-api-design-system",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "poc-s3kms": {
+      "name": "poc-s3kms",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "PokeMap": {
+      "name": "PokeMap",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "Poll-dancer": {
+      "name": "Poll-dancer",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "portefolje_play": {
+      "name": "portefolje_play",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "portefolje_play_from_server": {
+      "name": "portefolje_play_from_server",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "postgres_search": {
+      "name": "postgres_search",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "price": {
+      "name": "price",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "pricecalc": {
+      "name": "pricecalc",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "pricecalctemp": {
+      "name": "pricecalctemp",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "pricecompare": {
+      "name": "pricecompare",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "priceimp": {
+      "name": "priceimp",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "price_calculator_gatling": {
+      "name": "price_calculator_gatling",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "productadmin-api": {
+      "name": "productadmin-api",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "productcatalog": {
+      "name": "productcatalog",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "productcatalog-v2": {
+      "name": "productcatalog-v2",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "productcatalogadmin": {
+      "name": "productcatalogadmin",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "productcatalogcache": {
+      "name": "productcatalogcache",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "productcopy": {
+      "name": "productcopy",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "producttransfer": {
+      "name": "producttransfer",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "produktkatalog-rest": {
+      "name": "produktkatalog-rest",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "produktmal": {
+      "name": "produktmal",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "propfinder-admin-frontend": {
+      "name": "propfinder-admin-frontend",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "propfinder-backend": {
+      "name": "propfinder-backend",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "propfinder-devops": {
+      "name": "propfinder-devops",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "propfinder-dynamo-db": {
+      "name": "propfinder-dynamo-db",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "propfinder-frontend": {
+      "name": "propfinder-frontend",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "propfinder-frontend-vite": {
+      "name": "propfinder-frontend-vite",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "propfinder-pipeline-test-": {
+      "name": "propfinder-pipeline-test-",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "propfinder-react": {
+      "name": "propfinder-react",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "propfinder-report": {
+      "name": "propfinder-report",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "propfinder-report-generator": {
+      "name": "propfinder-report-generator",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "propfinder-sql": {
+      "name": "propfinder-sql",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "propfinderfilter": {
+      "name": "propfinderfilter",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "public-ssh-keys": {
+      "name": "public-ssh-keys",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "puppet_config": {
+      "name": "puppet_config",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "rappgen": {
+      "name": "rappgen",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "rappgenapi": {
+      "name": "rappgenapi",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "rapportutleggsforretningborett": {
+      "name": "rapportutleggsforretningborett",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "rapport_rammeverk": {
+      "name": "rapport_rammeverk",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "realty": {
+      "name": "realty",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "realty-client": {
+      "name": "realty-client",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "realty-demo-gui-vue-3": {
+      "name": "realty-demo-gui-vue-3",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "realty-gui": {
+      "name": "realty-gui",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "realty-swagger-client": {
+      "name": "realty-swagger-client",
+      "visibility": "public",
+      "status": "unknown"
+    },
+    "realty-test-client": {
+      "name": "realty-test-client",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "realty_datastore": {
+      "name": "realty_datastore",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "realty_loadtest": {
+      "name": "realty_loadtest",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "realty_model": {
+      "name": "realty_model",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "realty_response": {
+      "name": "realty_response",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "recipes": {
+      "name": "recipes",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "regeltest": {
+      "name": "regeltest",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "regis": {
+      "name": "regis",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "register-file-entries": {
+      "name": "register-file-entries",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "registerfilSok": {
+      "name": "registerfilSok",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "report-generator": {
+      "name": "report-generator",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "report-generator-vue": {
+      "name": "report-generator-vue",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "report-generator-vue-serverless": {
+      "name": "report-generator-vue-serverless",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "RepoTopics": {
+      "name": "RepoTopics",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "requsttests": {
+      "name": "requsttests",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "responsetimegraphs": {
+      "name": "responsetimegraphs",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "responsetimeparser_v2": {
+      "name": "responsetimeparser_v2",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "responsetimes": {
+      "name": "responsetimes",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "restgjeld": {
+      "name": "restgjeld",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "restgjeld-innfrielse-gui": {
+      "name": "restgjeld-innfrielse-gui",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "ronnikken-ambita-vUe": {
+      "name": "ronnikken-ambita-vUe",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "rop": {
+      "name": "rop",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "rport": {
+      "name": "rport",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "s3-bucket-listing": {
+      "name": "s3-bucket-listing",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "s3-transform": {
+      "name": "s3-transform",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "saldoforespoersel": {
+      "name": "saldoforespoersel",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "saldoforespoersel-gui": {
+      "name": "saldoforespoersel-gui",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sam-database-jobs": {
+      "name": "sam-database-jobs",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sam-eflyt-triggers": {
+      "name": "sam-eflyt-triggers",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sam-erine": {
+      "name": "sam-erine",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sam-erine-statuspage": {
+      "name": "sam-erine-statuspage",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sam-matrikkel-uuid": {
+      "name": "sam-matrikkel-uuid",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sam-megler-hub-bot": {
+      "name": "sam-megler-hub-bot",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sam-monitor": {
+      "name": "sam-monitor",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sam-monitor-gui": {
+      "name": "sam-monitor-gui",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sam-monitor-invoice": {
+      "name": "sam-monitor-invoice",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sam-monitor-report": {
+      "name": "sam-monitor-report",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sam-monitor-vitec": {
+      "name": "sam-monitor-vitec",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sam-monitor-vitec-front": {
+      "name": "sam-monitor-vitec-front",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sam-realty-compound": {
+      "name": "sam-realty-compound",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sam-realty-pdf": {
+      "name": "sam-realty-pdf",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sam-realty-proxy": {
+      "name": "sam-realty-proxy",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sam-report-api": {
+      "name": "sam-report-api",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sam-restart-service": {
+      "name": "sam-restart-service",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sam-samhandling": {
+      "name": "sam-samhandling",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sam-samhandling-bot": {
+      "name": "sam-samhandling-bot",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sam-sftp-listener": {
+      "name": "sam-sftp-listener",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sam-sftp-users": {
+      "name": "sam-sftp-users",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sam-vitec-billing": {
+      "name": "sam-vitec-billing",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "samhandling-innsyn-gui": {
+      "name": "samhandling-innsyn-gui",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "samhandling-kunde-gui": {
+      "name": "samhandling-kunde-gui",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "samhandling-test": {
+      "name": "samhandling-test",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "samhandling-types": {
+      "name": "samhandling-types",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "samhandling-usbl-types": {
+      "name": "samhandling-usbl-types",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "samhandling-vitec-types": {
+      "name": "samhandling-vitec-types",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sbom": {
+      "name": "sbom",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sbt-ambita-service-exception": {
+      "name": "sbt-ambita-service-exception",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sbt-authentication-client": {
+      "name": "sbt-authentication-client",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sbt-json": {
+      "name": "sbt-json",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sbt-json-time": {
+      "name": "sbt-json-time",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sbt-monitor-client": {
+      "name": "sbt-monitor-client",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sbt-price-client": {
+      "name": "sbt-price-client",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sbt-productcatalog-client": {
+      "name": "sbt-productcatalog-client",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sbt-realty-client": {
+      "name": "sbt-realty-client",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sbt-register-client": {
+      "name": "sbt-register-client",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sbt-s3-plugin": {
+      "name": "sbt-s3-plugin",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sbt-shambita": {
+      "name": "sbt-shambita",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sbt-shopping-client": {
+      "name": "sbt-shopping-client",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sbt-sosi-clip": {
+      "name": "sbt-sosi-clip",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sbt-stream": {
+      "name": "sbt-stream",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sbt-ws-requester": {
+      "name": "sbt-ws-requester",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sdoinfo": {
+      "name": "sdoinfo",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "segmenter": {
+      "name": "segmenter",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sentence_classification": {
+      "name": "sentence_classification",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "Serverless-OrderSystem-Plugins": {
+      "name": "Serverless-OrderSystem-Plugins",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "serverless-template": {
+      "name": "serverless-template",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "servicetorg": {
+      "name": "servicetorg",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "setexecutivestatustoretrievable": {
+      "name": "setexecutivestatustoretrievable",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "settlement-form": {
+      "name": "settlement-form",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "shopping": {
+      "name": "shopping",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "shopping-cart-rest": {
+      "name": "shopping-cart-rest",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "shopping_gatling": {
+      "name": "shopping_gatling",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "showmap": {
+      "name": "showmap",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "simpleurlcall": {
+      "name": "simpleurlcall",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sk-innsending-codegen": {
+      "name": "sk-innsending-codegen",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "skapipdf": {
+      "name": "skapipdf",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "skjoeteopplysninger-regler": {
+      "name": "skjoeteopplysninger-regler",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "sls-template-ts": {
+      "name": "sls-template-ts",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "so2loks_deprecated": {
+      "name": "so2loks_deprecated",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "sosiclip": {
+      "name": "sosiclip",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "soundex": {
+      "name": "soundex",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "speedvask": {
+      "name": "speedvask",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "spring-aws-ssm": {
+      "name": "spring-aws-ssm",
+      "visibility": "public",
+      "status": "unknown"
+    },
+    "spring-boot-webservices-prototype": {
+      "name": "spring-boot-webservices-prototype",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "springboot-ws-cli": {
+      "name": "springboot-ws-cli",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "squid": {
+      "name": "squid",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "ssa": {
+      "name": "ssa",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "ssa-ambita-university": {
+      "name": "ssa-ambita-university",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "ssaActions": {
+      "name": "ssaActions",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "ssocred": {
+      "name": "ssocred",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "ssrclient": {
+      "name": "ssrclient",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "staging": {
+      "name": "staging",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "star_schema": {
+      "name": "star_schema",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "status-notification-subscriber": {
+      "name": "status-notification-subscriber",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "status-notifications": {
+      "name": "status-notifications",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "stoltzen": {
+      "name": "stoltzen",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "streamlit-price-regulation": {
+      "name": "streamlit-price-regulation",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "style-guides": {
+      "name": "style-guides",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "styret-api": {
+      "name": "styret-api",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "supertakst-fakturering": {
+      "name": "supertakst-fakturering",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "svn-archive": {
+      "name": "svn-archive",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "swagger-play": {
+      "name": "swagger-play",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "swagger-scala-module": {
+      "name": "swagger-scala-module",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "swagger_ui": {
+      "name": "swagger_ui",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tech-frokost-amplify": {
+      "name": "tech-frokost-amplify",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tempo": {
+      "name": "tempo",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "terraform": {
+      "name": "terraform",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "testProject": {
+      "name": "testProject",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "testprosjekt": {
+      "name": "testprosjekt",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "testVue": {
+      "name": "testVue",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-account": {
+      "name": "tf-account",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-adconnector": {
+      "name": "tf-adconnector",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-analytics-datacatalog": {
+      "name": "tf-analytics-datacatalog",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-analytics-eddie": {
+      "name": "tf-analytics-eddie",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-analytics-pdfextractor": {
+      "name": "tf-analytics-pdfextractor",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-cloudfront": {
+      "name": "tf-cloudfront",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-daas-airbyte": {
+      "name": "tf-daas-airbyte",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-daas-azurene-dataashare": {
+      "name": "tf-daas-azurene-dataashare",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-daas-eiendomnorge2snowflake": {
+      "name": "tf-daas-eiendomnorge2snowflake",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-daas-pixedit2snowflake": {
+      "name": "tf-daas-pixedit2snowflake",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-daas-pixeditToSnowflake": {
+      "name": "tf-daas-pixeditToSnowflake",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-datatjenester-dms": {
+      "name": "tf-datatjenester-dms",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-edr2elastic": {
+      "name": "tf-datatjenester-edr2elastic",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-edr2realty": {
+      "name": "tf-datatjenester-edr2realty",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-elastic_aws": {
+      "name": "tf-datatjenester-elastic_aws",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-geoserver": {
+      "name": "tf-datatjenester-geoserver",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-gg": {
+      "name": "tf-datatjenester-gg",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-housingvalue": {
+      "name": "tf-datatjenester-housingvalue",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-lmr": {
+      "name": "tf-datatjenester-lmr",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-logviewer": {
+      "name": "tf-datatjenester-logviewer",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-new": {
+      "name": "tf-datatjenester-new",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-npr": {
+      "name": "tf-datatjenester-npr",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-online": {
+      "name": "tf-datatjenester-online",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-realty": {
+      "name": "tf-datatjenester-realty",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-response": {
+      "name": "tf-datatjenester-response",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-showmap": {
+      "name": "tf-datatjenester-showmap",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-skapipdf": {
+      "name": "tf-datatjenester-skapipdf",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-datatjenester-storage": {
+      "name": "tf-datatjenester-storage",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-dev_tools-bamboo": {
+      "name": "tf-dev_tools-bamboo",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-dev_tools-conflu": {
+      "name": "tf-dev_tools-conflu",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-dev_tools-jira": {
+      "name": "tf-dev_tools-jira",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-dev_tools-proto": {
+      "name": "tf-dev_tools-proto",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-dev_tools-rundeck": {
+      "name": "tf-dev_tools-rundeck",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-dev_tools-sonar": {
+      "name": "tf-dev_tools-sonar",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-dto-alb2snowflake": {
+      "name": "tf-dto-alb2snowflake",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-dto-datacatalog": {
+      "name": "tf-dto-datacatalog",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-dto-geonetwork": {
+      "name": "tf-dto-geonetwork",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-dto-snowflake": {
+      "name": "tf-dto-snowflake",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-dto-xledger2snowflake": {
+      "name": "tf-dto-xledger2snowflake",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-edr-dataquality": {
+      "name": "tf-edr-dataquality",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-edr-dbcmp": {
+      "name": "tf-edr-dbcmp",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-edr-dwhdb": {
+      "name": "tf-edr-dwhdb",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-edr-edrdsf": {
+      "name": "tf-edr-edrdsf",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-edr-gapi": {
+      "name": "tf-edr-gapi",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-edr-inmisc": {
+      "name": "tf-edr-inmisc",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-edr-inndb": {
+      "name": "tf-edr-inndb",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-edr-inndiv": {
+      "name": "tf-edr-inndiv",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-edr-inpost": {
+      "name": "tf-edr-inpost",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-edr-invoicecollector": {
+      "name": "tf-edr-invoicecollector",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-edr-matbe": {
+      "name": "tf-edr-matbe",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-edr-matles": {
+      "name": "tf-edr-matles",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-edr-oculus": {
+      "name": "tf-edr-oculus",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-edr-stedsnavn": {
+      "name": "tf-edr-stedsnavn",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-eflyt-afproxy": {
+      "name": "tf-eflyt-afproxy",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-eflyt-amq": {
+      "name": "tf-eflyt-amq",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-eflyt-db": {
+      "name": "tf-eflyt-db",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-eflyt-efull": {
+      "name": "tf-eflyt-efull",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-eflyt-eps": {
+      "name": "tf-eflyt-eps",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-eflyt-esign": {
+      "name": "tf-eflyt-esign",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-eflyt-esvirlegacy": {
+      "name": "tf-eflyt-esvirlegacy",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-eflyt-eting": {
+      "name": "tf-eflyt-eting",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-eflyt-etingalb": {
+      "name": "tf-eflyt-etingalb",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-eflyt-etview": {
+      "name": "tf-eflyt-etview",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-eflyt-infra": {
+      "name": "tf-eflyt-infra",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-esign-esvir": {
+      "name": "tf-esign-esvir",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-bus": {
+      "name": "tf-felles-bus",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-cluster": {
+      "name": "tf-felles-cluster",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-delivery": {
+      "name": "tf-felles-delivery",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-ejb": {
+      "name": "tf-felles-ejb",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-fellesaurora": {
+      "name": "tf-felles-fellesaurora",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-ilasset": {
+      "name": "tf-felles-ilasset",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-monitor": {
+      "name": "tf-felles-monitor",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-neapp": {
+      "name": "tf-felles-neapp",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-oms": {
+      "name": "tf-felles-oms",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-oms_nop": {
+      "name": "tf-felles-oms_nop",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-oms_pmr": {
+      "name": "tf-felles-oms_pmr",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-oms_pms": {
+      "name": "tf-felles-oms_pms",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-pay": {
+      "name": "tf-felles-pay",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-prdcat": {
+      "name": "tf-felles-prdcat",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-rappgen": {
+      "name": "tf-felles-rappgen",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-regis": {
+      "name": "tf-felles-regis",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-sftp": {
+      "name": "tf-felles-sftp",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-shop": {
+      "name": "tf-felles-shop",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-shopdb": {
+      "name": "tf-felles-shopdb",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-testbucket": {
+      "name": "tf-felles-testbucket",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-felles-torpedo": {
+      "name": "tf-felles-torpedo",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-infoland-alva": {
+      "name": "tf-infoland-alva",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-infoland-ambitaman": {
+      "name": "tf-infoland-ambitaman",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-infoland-cloudfront": {
+      "name": "tf-infoland-cloudfront",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-infoland-design": {
+      "name": "tf-infoland-design",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-infoland-download": {
+      "name": "tf-infoland-download",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-infoland-ilcontent": {
+      "name": "tf-infoland-ilcontent",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-infoland-ilmonitor": {
+      "name": "tf-infoland-ilmonitor",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-infoland-ilregister": {
+      "name": "tf-infoland-ilregister",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-infoland-innsyn": {
+      "name": "tf-infoland-innsyn",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-infoland-integrations": {
+      "name": "tf-infoland-integrations",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-infoland-ovtest": {
+      "name": "tf-infoland-ovtest",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-infoland-repo": {
+      "name": "tf-infoland-repo",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-infoland-reportgenerator": {
+      "name": "tf-infoland-reportgenerator",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-infoland-servicetorg": {
+      "name": "tf-infoland-servicetorg",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-infoland-static": {
+      "name": "tf-infoland-static",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-kundeflyt-ambita_customer_sync": {
+      "name": "tf-kundeflyt-ambita_customer_sync",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-kundeflyt-apihome": {
+      "name": "tf-kundeflyt-apihome",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-kundeflyt-auth": {
+      "name": "tf-kundeflyt-auth",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-kundeflyt-authdb": {
+      "name": "tf-kundeflyt-authdb",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-kundeflyt-billing": {
+      "name": "tf-kundeflyt-billing",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-kundeflyt-billingdb": {
+      "name": "tf-kundeflyt-billingdb",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-kundeflyt-billing_my_invoices": {
+      "name": "tf-kundeflyt-billing_my_invoices",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-kundeflyt-ivoice": {
+      "name": "tf-kundeflyt-ivoice",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-kundeflyt-loks": {
+      "name": "tf-kundeflyt-loks",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-kundeflyt-my_settlements": {
+      "name": "tf-kundeflyt-my_settlements",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-kundeflyt-ofs": {
+      "name": "tf-kundeflyt-ofs",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-kundeflyt-price": {
+      "name": "tf-kundeflyt-price",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-kundeflyt-swagger": {
+      "name": "tf-kundeflyt-swagger",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-1password": {
+      "name": "tf-ops-1password",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-ad": {
+      "name": "tf-ops-ad",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-adconnect": {
+      "name": "tf-ops-adconnect",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-ops-advpc": {
+      "name": "tf-ops-advpc",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-ops-amicent": {
+      "name": "tf-ops-amicent",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-ansatte": {
+      "name": "tf-ops-ansatte",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-api": {
+      "name": "tf-ops-api",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-aws_backup": {
+      "name": "tf-ops-aws_backup",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-axapta": {
+      "name": "tf-ops-axapta",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-bastion": {
+      "name": "tf-ops-bastion",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-ops-bcac": {
+      "name": "tf-ops-bcac",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-clientvpn": {
+      "name": "tf-ops-clientvpn",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-crowd": {
+      "name": "tf-ops-crowd",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-csspud": {
+      "name": "tf-ops-csspud",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-dns_ambita": {
+      "name": "tf-ops-dns_ambita",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-dns_edronline": {
+      "name": "tf-ops-dns_edronline",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-dns_efullmakt": {
+      "name": "tf-ops-dns_efullmakt",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-dns_eiendomsinfo": {
+      "name": "tf-ops-dns_eiendomsinfo",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-dns_esignering": {
+      "name": "tf-ops-dns_esignering",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-dns_etinglysing": {
+      "name": "tf-ops-dns_etinglysing",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-dns_il24": {
+      "name": "tf-ops-dns_il24",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-dns_infoland": {
+      "name": "tf-ops-dns_infoland",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-dns_ivegen": {
+      "name": "tf-ops-dns_ivegen",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-dns_tomtesok": {
+      "name": "tf-ops-dns_tomtesok",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-ea": {
+      "name": "tf-ops-ea",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-entraid": {
+      "name": "tf-ops-entraid",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-ops-exthub": {
+      "name": "tf-ops-exthub",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-github": {
+      "name": "tf-ops-github",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-githubrunner": {
+      "name": "tf-ops-githubrunner",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-grafana": {
+      "name": "tf-ops-grafana",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-hub": {
+      "name": "tf-ops-hub",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-icinga": {
+      "name": "tf-ops-icinga",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-infrastructure": {
+      "name": "tf-ops-infrastructure",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-katastrofe": {
+      "name": "tf-ops-katastrofe",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-ops-katastrofe_audit": {
+      "name": "tf-ops-katastrofe_audit",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-localfiles": {
+      "name": "tf-ops-localfiles",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-ops-logfaces": {
+      "name": "tf-ops-logfaces",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-networkacct": {
+      "name": "tf-ops-networkacct",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-nexus": {
+      "name": "tf-ops-nexus",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-opsgenie": {
+      "name": "tf-ops-opsgenie",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-ops-p1wexcho365": {
+      "name": "tf-ops-p1wexcho365",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-peering": {
+      "name": "tf-ops-peering",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-peeringadmin": {
+      "name": "tf-ops-peeringadmin",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-peeringadvpc": {
+      "name": "tf-ops-peeringadvpc",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-pha": {
+      "name": "tf-ops-pha",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-ops-puppet": {
+      "name": "tf-ops-puppet",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-ses": {
+      "name": "tf-ops-ses",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-ses_logging": {
+      "name": "tf-ops-ses_logging",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-squid": {
+      "name": "tf-ops-squid",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-stash": {
+      "name": "tf-ops-stash",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-terraform": {
+      "name": "tf-ops-terraform",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-tsmdata2s3": {
+      "name": "tf-ops-tsmdata2s3",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-urbackup": {
+      "name": "tf-ops-urbackup",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-ops-vpnaws": {
+      "name": "tf-ops-vpnaws",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-ops-vpnendpoint": {
+      "name": "tf-ops-vpnendpoint",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-ops-waf": {
+      "name": "tf-ops-waf",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-ops-yggdrasil": {
+      "name": "tf-ops-yggdrasil",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-peering-test": {
+      "name": "tf-peering-test",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-platt-nexus": {
+      "name": "tf-platt-nexus",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-propfinder-app": {
+      "name": "tf-propfinder-app",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-system-extdoc": {
+      "name": "tf-system-extdoc",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-system-ilassetoldback": {
+      "name": "tf-system-ilassetoldback",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-system-integrations": {
+      "name": "tf-system-integrations",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-system-invoice": {
+      "name": "tf-system-invoice",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-system-junit-test": {
+      "name": "tf-system-junit-test",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tf-system-login": {
+      "name": "tf-system-login",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-system-longeco": {
+      "name": "tf-system-longeco",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-system-spa": {
+      "name": "tf-system-spa",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-system-speedvask": {
+      "name": "tf-system-speedvask",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-system-unaambita": {
+      "name": "tf-system-unaambita",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-template": {
+      "name": "tf-template",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tf-template-win": {
+      "name": "tf-template-win",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "thebus": {
+      "name": "thebus",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tinglysing-og-samhandling-eksempelkode": {
+      "name": "tinglysing-og-samhandling-eksempelkode",
+      "visibility": "public",
+      "status": "unknown"
+    },
+    "tinglysing2": {
+      "name": "tinglysing2",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tmn": {
+      "name": "tmn",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tmn-gh-actions": {
+      "name": "tmn-gh-actions",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "token-handler": {
+      "name": "token-handler",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "token-handler-v2": {
+      "name": "token-handler-v2",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "token-handling-js": {
+      "name": "token-handling-js",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tomcat-external-libs": {
+      "name": "tomcat-external-libs",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tomcat-external-system": {
+      "name": "tomcat-external-system",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tomcat-internal-libs": {
+      "name": "tomcat-internal-libs",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tomcat-internal-system": {
+      "name": "tomcat-internal-system",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tomcatauthentication": {
+      "name": "tomcatauthentication",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "torpedo": {
+      "name": "torpedo",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tos-github-workflows": {
+      "name": "tos-github-workflows",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "TOS-risiko": {
+      "name": "TOS-risiko",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tos-workflow-test-maven": {
+      "name": "tos-workflow-test-maven",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "transfer": {
+      "name": "transfer",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "tst": {
+      "name": "tst",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "TTP-DEMO": {
+      "name": "TTP-DEMO",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "tuan-pokemon-haiyahh": {
+      "name": "tuan-pokemon-haiyahh",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "twi-docs": {
+      "name": "twi-docs",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "ucxmlservice": {
+      "name": "ucxmlservice",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "undefined": {
+      "name": "undefined",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "user-catalog-services": {
+      "name": "user-catalog-services",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "usercatalog": {
+      "name": "usercatalog",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "usercatalog-client": {
+      "name": "usercatalog-client",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "usercatalog-server": {
+      "name": "usercatalog-server",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "usercatalogsputil": {
+      "name": "usercatalogsputil",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "varsling": {
+      "name": "varsling",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "viseiendommen-map": {
+      "name": "viseiendommen-map",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "visma-simple-test": {
+      "name": "visma-simple-test",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "visma-test": {
+      "name": "visma-test",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "visma.net-klient": {
+      "name": "visma.net-klient",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "vivid-blueprint": {
+      "name": "vivid-blueprint",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "vivid-blueprint-wbj": {
+      "name": "vivid-blueprint-wbj",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "wbj-ambita": {
+      "name": "wbj-ambita",
+      "visibility": "private",
+      "status": "unknown"
+    },
+    "wofftools": {
+      "name": "wofftools",
+      "visibility": "internal",
+      "status": "unknown"
+    },
+    "wsclients": {
+      "name": "wsclients",
+      "visibility": "internal",
+      "status": "unknown",
+      "lastChecked": "2025-11-10T16:25:26.400Z",
+      "lastPushed": "2022-09-29T09:17:43Z",
+      "lastUpdate": "2025-11-10T20:03:31.898Z",
+      "migrationId": "RM_kgDaACQxMTZhNzcwNC1jYzdkLTQyMWQtYWVkNi1kM2U2YzdkMDRlYmM",
+      "queuedAt": "2025-11-10T17:45:14.085Z",
+      "startedAt": "2025-11-10T17:45:14.085Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "wstools": {
+      "name": "wstools",
+      "visibility": "private",
+      "status": "unknown",
+      "lastChecked": "2025-11-10T16:25:24.722Z",
+      "lastPushed": "2024-10-03T18:13:15Z",
+      "lastUpdate": "2025-11-10T20:03:32.626Z",
+      "migrationId": "RM_kgDaACQzZWY5NzBhNy0wOWVjLTRmY2EtOTk4Zi0zNDc1ZTg5MDEwMjc",
+      "queuedAt": "2025-11-10T17:48:26.178Z",
+      "startedAt": "2025-11-10T17:48:26.178Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "xml-user-update": {
+      "name": "xml-user-update",
+      "visibility": "internal",
+      "status": "unknown",
+      "lastChecked": "2025-11-10T16:25:23.235Z",
+      "lastPushed": "2022-09-29T09:17:57Z",
+      "lastUpdate": "2025-11-10T20:09:35.448Z",
+      "migrationId": "RM_kgDaACQ4MDQ4ODUxZS1iOTE5LTQxNmYtYTJkMy1mOTMyOTJjODQ2Mzk",
+      "queuedAt": "2025-11-10T20:08:28.945Z",
+      "startedAt": "2025-11-10T20:08:28.945Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "yggdrasil": {
+      "name": "yggdrasil",
+      "visibility": "private",
+      "status": "unknown",
+      "lastChecked": "2025-11-10T16:25:21.615Z",
+      "lastPushed": "2023-08-21T20:41:44Z",
+      "lastUpdate": "2025-11-10T20:09:36.163Z",
+      "migrationId": "RM_kgDaACRiNzg5Njc0Ny0wZTZkLTRmMDgtYjQ3Mi0xMDkzODM2Yjk0ZDU",
+      "queuedAt": "2025-11-10T20:08:34.931Z",
+      "startedAt": "2025-11-10T20:08:34.931Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    },
+    "zip-test": {
+      "name": "zip-test",
+      "visibility": "private",
+      "status": "unknown",
+      "lastChecked": "2025-11-10T16:25:19.806Z",
+      "lastPushed": "2025-07-12T01:53:06Z",
+      "lastUpdate": "2025-11-10T20:09:42.524Z",
+      "migrationId": "RM_kgDaACQyZDJkMWU0Yy1lMzdiLTQ3NDYtYjI4Ni03MGIxYTgxZTkwZjM",
+      "queuedAt": "2025-11-10T20:08:41.109Z",
+      "startedAt": "2025-11-10T20:08:41.109Z",
+      "errorMessage": "Migration status not found - may have completed or failed"
+    }
+  },
+  "sourceEnt": "spirgroup",
+  "targetEnt": "spirtest"
+}

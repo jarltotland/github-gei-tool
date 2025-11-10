@@ -8,6 +8,7 @@ export interface HostConfig {
   restBase: string;
   graphqlUrl: string;
   token: string;
+  enterprise: string;
   org: string;
 }
 
@@ -44,6 +45,8 @@ function deriveEndpoints(url: string | undefined, isSource: boolean): { restBase
 export function loadConfig(cliPort?: number, cliPollSeconds?: number): Config {
   const sourceToken = process.env.GH_SOURCE_TOKEN;
   const targetToken = process.env.GH_TARGET_TOKEN;
+  const sourceEnt = process.env.GH_SOURCE_ENT;
+  const targetEnt = process.env.GH_TARGET_ENT;
   const sourceOrg = process.env.GH_SOURCE_ORG;
   const targetOrg = process.env.GH_TARGET_ORG;
 
@@ -54,6 +57,16 @@ export function loadConfig(cliPort?: number, cliPollSeconds?: number): Config {
 
   if (!targetToken) {
     console.error('Error: GH_TARGET_TOKEN environment variable must be set');
+    process.exit(1);
+  }
+
+  if (!sourceEnt) {
+    console.error('Error: GH_SOURCE_ENT environment variable must be set');
+    process.exit(1);
+  }
+
+  if (!targetEnt) {
+    console.error('Error: GH_TARGET_ENT environment variable must be set');
     process.exit(1);
   }
 
@@ -77,11 +90,13 @@ export function loadConfig(cliPort?: number, cliPollSeconds?: number): Config {
     source: {
       ...sourceEndpoints,
       token: sourceToken,
+      enterprise: sourceEnt,
       org: sourceOrg
     },
     target: {
       ...targetEndpoints,
       token: targetToken,
+      enterprise: targetEnt,
       org: targetOrg
     },
     port: cliPort || 3000,

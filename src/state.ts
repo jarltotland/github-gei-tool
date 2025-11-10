@@ -27,7 +27,9 @@ export interface RepoState {
 
 export interface MigrationState {
   version: number;
+  sourceEnt: string;
   sourceOrg: string;
+  targetEnt: string;
   targetOrg: string;
   sourceHost: string;
   targetHost: string;
@@ -39,18 +41,22 @@ let writeMutex = Promise.resolve();
 
 let currentState: MigrationState = {
   version: 1,
+  sourceEnt: '',
   sourceOrg: '',
+  targetEnt: '',
   targetOrg: '',
   sourceHost: '',
   targetHost: '',
   repos: {}
 };
 
-export function initState(sourceOrg: string, targetOrg: string, sourceHost: string, targetHost: string): void {
+export function initState(sourceEnt: string, sourceOrg: string, targetEnt: string, targetOrg: string, sourceHost: string, targetHost: string): void {
   loadState();
   
   // Update org and host info
+  currentState.sourceEnt = sourceEnt;
   currentState.sourceOrg = sourceOrg;
+  currentState.targetEnt = targetEnt;
   currentState.targetOrg = targetOrg;
   currentState.sourceHost = sourceHost;
   currentState.targetHost = targetHost;
@@ -130,7 +136,7 @@ export function setStatus(repoName: string, status: MigrationStatus, errorMessag
 
 export function listIncomplete(): RepoState[] {
   return Object.values(currentState.repos).filter(
-    repo => repo.status !== 'imported' && repo.status !== 'failed'
+    repo => ['queued', 'exporting', 'exported', 'importing'].includes(repo.status)
   );
 }
 

@@ -4,10 +4,36 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-primary: #f5f5f5;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f6f8fa;
+    --text-primary: #24292e;
+    --text-secondary: #586069;
+    --border-color: #e1e4e8;
+    --hover-bg: #f6f8fa;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --modal-overlay: rgba(0, 0, 0, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #0d1117;
+        --bg-secondary: #161b22;
+        --bg-tertiary: #21262d;
+        --text-primary: #c9d1d9;
+        --text-secondary: #8b949e;
+        --border-color: #30363d;
+        --hover-bg: #21262d;
+        --shadow: rgba(0, 0, 0, 0.3);
+        --modal-overlay: rgba(0, 0, 0, 0.7);
+    }
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: #f5f5f5;
-    color: #333;
+    background: var(--bg-primary);
+    color: var(--text-primary);
 }
 
 .container {
@@ -17,21 +43,72 @@ body {
 }
 
 header {
-    background: white;
+    background: var(--bg-secondary);
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px var(--shadow);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.header-left {
+    flex: 1;
 }
 
 h1 {
     margin-bottom: 10px;
-    color: #24292e;
+    color: var(--text-primary);
 }
 
 #info {
-    color: #586069;
+    color: var(--text-secondary);
     font-size: 14px;
+}
+
+.status-worker-control {
+    background: var(--bg-tertiary);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px 16px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.status-worker-control.running {
+    border-color: #28a745;
+}
+
+.status-worker-control.stopped {
+    border-color: var(--border-color);
+}
+
+.status-worker-title {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-worker-status {
+    font-size: 12px;
+    color: var(--text-secondary);
+    min-height: 16px;
+    font-style: italic;
+}
+
+#worker-toggle {
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .stats {
@@ -42,10 +119,10 @@ h1 {
 }
 
 .stat-box {
-    background: white;
+    background: var(--bg-secondary);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px var(--shadow);
     border-left: 4px solid #0366d6;
 }
 
@@ -71,7 +148,7 @@ h1 {
 
 .stat-label {
     font-size: 12px;
-    color: #586069;
+    color: var(--text-secondary);
     text-transform: uppercase;
     margin-bottom: 5px;
 }
@@ -82,16 +159,16 @@ h1 {
 }
 
 .filters {
-    background: white;
+    background: var(--bg-secondary);
     padding: 15px 20px;
     border-radius: 8px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px var(--shadow);
 }
 
 .filters label {
     font-weight: 600;
-    color: #24292e;
+    color: var(--text-primary);
     display: block;
     margin-bottom: 10px;
 }
@@ -133,22 +210,22 @@ h1 {
 
 table {
     width: 100%;
-    background: white;
+    background: var(--bg-secondary);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px var(--shadow);
 }
 
 thead {
-    background: #f6f8fa;
+    background: var(--bg-tertiary);
 }
 
 th {
     text-align: left;
     padding: 12px;
     font-weight: 600;
-    color: #24292e;
-    border-bottom: 1px solid #e1e4e8;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
 }
 
 th.sortable {
@@ -159,7 +236,7 @@ th.sortable {
 }
 
 th.sortable:hover {
-    background: #e1e4e8;
+    background: var(--hover-bg);
 }
 
 th.sortable::after {
@@ -180,11 +257,11 @@ th.sortable.sort-desc::after {
 }
 
 tbody tr {
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid var(--border-color);
 }
 
 tbody tr:hover {
-    background: #f6f8fa;
+    background: var(--hover-bg);
 }
 
 td {
@@ -193,7 +270,7 @@ td {
 
 .loading {
     text-align: center;
-    color: #586069;
+    color: var(--text-secondary);
     padding: 40px !important;
 }
 
@@ -262,11 +339,11 @@ button:disabled {
 
 .elapsed-time {
     font-family: 'Monaco', 'Courier New', monospace;
-    color: #586069;
+    color: var(--text-secondary);
 }
 
 .timestamp {
-    color: #586069;
+    color: var(--text-secondary);
     font-size: 13px;
 }
 
@@ -279,7 +356,7 @@ button:disabled {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: var(--modal-overlay);
 }
 
 .modal.show {
@@ -289,19 +366,19 @@ button:disabled {
 }
 
 .modal-content {
-    background: white;
+    background: var(--bg-secondary);
     border-radius: 8px;
     width: 90%;
     max-width: 900px;
     max-height: 90vh;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 12px var(--shadow);
 }
 
 .modal-header {
     padding: 20px;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid var(--border-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -309,12 +386,12 @@ button:disabled {
 
 .modal-header h2 {
     margin: 0;
-    color: #24292e;
+    color: var(--text-primary);
 }
 
 .close-btn {
     background: none;
-    color: #586069;
+    color: var(--text-secondary);
     font-size: 28px;
     padding: 0;
     width: 32px;
@@ -323,8 +400,8 @@ button:disabled {
 }
 
 .close-btn:hover {
-    background: #f6f8fa;
-    color: #24292e;
+    background: var(--hover-bg);
+    color: var(--text-primary);
 }
 
 .modal-body {
@@ -334,7 +411,7 @@ button:disabled {
 }
 
 #logs-content {
-    background: #f6f8fa;
+    background: var(--bg-tertiary);
     padding: 15px;
     border-radius: 4px;
     overflow-x: auto;
@@ -343,6 +420,7 @@ button:disabled {
     line-height: 1.5;
     white-space: pre-wrap;
     word-wrap: break-word;
+    color: var(--text-primary);
 }
 
 .visibility-badge {

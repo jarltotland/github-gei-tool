@@ -1,8 +1,12 @@
 let state = null;
 let eventSource = null;
-let sortColumn = 'name';
-let sortDirection = 'asc';
+let sortColumn = 'lastUpdate';
+let sortDirection = 'desc';
 let activeFilters = new Set(['needs_migration', 'queued', 'exporting', 'exported', 'importing', 'synced', 'imported', 'failed', 'unknown']);
+let repoNameFilter = '';
+let statusWorkerInfo = { running: false, currentRepo: null };
+let migrationWorkerInfo = { running: false, inProgress: 0, maxConcurrent: 10 };
+let progressWorkerInfo = { running: false, currentRepo: null };
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
@@ -11,6 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
     startElapsedTimer();
     setupSorting();
     setupFilters();
+    setupRepoFilter();
+    loadStatusWorkerInfo();
+    loadMigrationWorkerInfo();
+    loadProgressWorkerInfo();
+    setInterval(loadStatusWorkerInfo, 5000); // Poll every 5 seconds
+    setInterval(loadMigrationWorkerInfo, 5000); // Poll every 5 seconds
+    setInterval(loadProgressWorkerInfo, 5000); // Poll every 5 seconds
 });
 
 async function loadState() {
@@ -52,7 +63,7 @@ function renderState() {
 
     // Update header info
     document.getElementById('info').textContent = 
-        `Migrating from enterprise/${state.sourceOrg} (${state.sourceHost}) to enterprise/${state.targetOrg} (${state.targetHost})`;
+        `Migrating from ${state.sourceEnt}/${state.sourceOrg} (${state.sourceHost}) to ${state.targetEnt}/${state.targetOrg} (${state.targetHost})`;
 
     // Calculate stats
     const repos = Object.values(state.repos);
@@ -62,7 +73,8 @@ function renderState() {
         queued: repos.filter(r => r.status === 'queued').length,
         progress: repos.filter(r => ['exporting', 'exported', 'importing'].includes(r.status)).length,
         synced: repos.filter(r => r.status === 'synced' || r.status === 'imported').length,
-        failed: repos.filter(r => r.status === 'failed').length
+        failed: repos.filter(r => r.status === 'failed').length,
+        unknown: repos.filter(r => r.status === 'unknown').length
     };
 
     // Update stats
@@ -72,6 +84,7 @@ function renderState() {
     document.getElementById('stat-progress').textContent = stats.progress;
     document.getElementById('stat-synced').textContent = stats.synced;
     document.getElementById('stat-failed').textContent = stats.failed;
+    document.getElementById('stat-unknown').textContent = stats.unknown;
 
     // Render table
     renderTable(repos);
@@ -80,21 +93,27 @@ function renderState() {
 function renderTable(repos) {
     const tbody = document.getElementById('migrations-tbody');
     
-    // Apply filter - show repos that match any active filter
+    // Apply status filter - show repos that match any active filter
     repos = repos.filter(r => activeFilters.has(r.status));
     
+    // Apply repository name filter (case insensitive)
+    if (repoNameFilter) {
+        const filterLower = repoNameFilter.toLowerCase();
+        repos = repos.filter(r => r.name.toLowerCase().includes(filterLower));
+    }
+    
     if (repos.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="8" class="loading">No repositories found</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="6" class="loading">No repositories found</td></tr>';
         return;
     }
-
+    
     // Apply sorting
     repos = sortRepos(repos);
 
     tbody.innerHTML = repos.map(repo => {
         const elapsed = formatElapsedTime(repo);
         const statusClass = `status-${repo.status}`;
-        const visibilityClass = `visibility-${repo.visibility}`;
+        const lastUpdate = repo.lastUpdate ? formatTimestamp(repo.lastUpdate) : '-';
         const lastChecked = repo.lastChecked ? formatTimestamp(repo.lastChecked) : '-';
         const lastPushed = repo.lastPushed ? formatTimestamp(repo.lastPushed, true) : '-';
         
@@ -102,11 +121,10 @@ function renderTable(repos) {
             <tr>
                 <td><strong>${escapeHtml(repo.name)}</strong></td>
                 <td><span class="status-badge ${statusClass}">${getStatusLabel(repo.status)}</span></td>
-                <td><span class="visibility-badge ${visibilityClass}">${repo.visibility.toUpperCase()}</span></td>
+                <td class="timestamp">${lastUpdate}</td>
                 <td class="timestamp">${lastChecked}</td>
                 <td class="timestamp">${lastPushed}</td>
                 <td class="elapsed-time" data-repo="${escapeHtml(repo.name)}">${elapsed}</td>
-                <td><code>${repo.migrationId || '-'}</code></td>
                 <td>
                     <button onclick="showLogs('${escapeHtml(repo.name)}')" 
                             ${!repo.migrationId ? 'disabled' : ''}>
@@ -242,7 +260,7 @@ function setupSorting() {
     // Set initial sort indicator
     const initialHeader = document.querySelector(`th[data-sort="${sortColumn}"]`);
     if (initialHeader) {
-        initialHeader.classList.add('sort-asc');
+        initialHeader.classList.add(`sort-${sortDirection}`);
     }
 }
 
@@ -256,6 +274,9 @@ function sortRepos(repos) {
         } else if (sortColumn === 'status') {
             aVal = a.status;
             bVal = b.status;
+        } else if (sortColumn === 'lastUpdate') {
+            aVal = a.lastUpdate ? new Date(a.lastUpdate).getTime() : 0;
+            bVal = b.lastUpdate ? new Date(b.lastUpdate).getTime() : 0;
         } else if (sortColumn === 'lastChecked') {
             aVal = a.lastChecked ? new Date(a.lastChecked).getTime() : 0;
             bVal = b.lastChecked ? new Date(b.lastChecked).getTime() : 0;
@@ -317,6 +338,68 @@ function setupFilters() {
     });
 }
 
+function setupRepoFilter() {
+    const repoFilterInput = document.getElementById('repo-filter');
+    if (repoFilterInput) {
+        repoFilterInput.addEventListener('input', (e) => {
+            repoNameFilter = e.target.value;
+            
+            // Re-render table
+            if (state) {
+                renderState();
+            }
+        });
+    }
+}
+
+function filterByStatBox(filterType) {
+    const filterPills = document.querySelectorAll('.filter-pill');
+    
+    if (filterType === 'all') {
+        // Show all statuses
+        activeFilters = new Set(['needs_migration', 'queued', 'exporting', 'exported', 'importing', 'synced', 'imported', 'failed', 'unknown']);
+        filterPills.forEach(pill => pill.classList.add('active'));
+    } else if (filterType === 'progress') {
+        // In Progress = exporting, exported, importing
+        activeFilters = new Set(['exporting', 'exported', 'importing']);
+        filterPills.forEach(pill => {
+            const status = pill.getAttribute('data-status');
+            if (status === 'exporting') {
+                pill.classList.add('active');
+            } else {
+                pill.classList.remove('active');
+            }
+        });
+    } else if (filterType === 'synced') {
+        // Synced = synced + imported
+        activeFilters = new Set(['synced', 'imported']);
+        filterPills.forEach(pill => {
+            const status = pill.getAttribute('data-status');
+            if (status === 'synced') {
+                pill.classList.add('active');
+            } else {
+                pill.classList.remove('active');
+            }
+        });
+    } else {
+        // Single status filter
+        activeFilters = new Set([filterType]);
+        filterPills.forEach(pill => {
+            const status = pill.getAttribute('data-status');
+            if (status === filterType) {
+                pill.classList.add('active');
+            } else {
+                pill.classList.remove('active');
+            }
+        });
+    }
+    
+    // Re-render
+    if (state) {
+        renderState();
+    }
+}
+
 function getStatusLabel(status) {
     const labels = {
         'needs_migration': 'UNSYNCED',
@@ -330,4 +413,170 @@ function getStatusLabel(status) {
         'unknown': 'UNKNOWN'
     };
     return labels[status] || status.toUpperCase();
+}
+
+async function loadStatusWorkerInfo() {
+    try {
+        const response = await fetch('/api/status-worker');
+        statusWorkerInfo = await response.json();
+        updateStatusWorkerUI();
+    } catch (error) {
+        console.error('Failed to load status worker info:', error);
+    }
+}
+
+function updateStatusWorkerUI() {
+    const control = document.querySelector('.status-worker-control');
+    const statusEl = document.getElementById('worker-status');
+    const buttonEl = document.getElementById('worker-toggle');
+    
+    if (statusWorkerInfo.running) {
+        control.classList.add('running');
+        control.classList.remove('stopped');
+        buttonEl.textContent = 'Stop';
+        buttonEl.disabled = false;
+        
+        if (statusWorkerInfo.currentRepo) {
+            statusEl.textContent = statusWorkerInfo.currentRepo;
+        } else {
+            statusEl.textContent = 'Running (idle)';
+        }
+    } else {
+        control.classList.remove('running');
+        control.classList.add('stopped');
+        buttonEl.textContent = 'Start';
+        buttonEl.disabled = false;
+        statusEl.textContent = 'Stopped';
+    }
+}
+
+async function toggleStatusWorker() {
+    const button = document.getElementById('worker-toggle');
+    button.disabled = true;
+    
+    try {
+        const endpoint = statusWorkerInfo.running ? '/api/status-worker/stop' : '/api/status-worker/start';
+        const response = await fetch(endpoint, { method: 'POST' });
+        const result = await response.json();
+        
+        if (result.success) {
+            await loadStatusWorkerInfo();
+        } else {
+            console.error('Failed to toggle status worker:', result.message);
+            button.disabled = false;
+        }
+    } catch (error) {
+        console.error('Error toggling status worker:', error);
+        button.disabled = false;
+    }
+}
+
+async function loadMigrationWorkerInfo() {
+    try {
+        const response = await fetch('/api/migration-worker');
+        migrationWorkerInfo = await response.json();
+        updateMigrationWorkerUI();
+    } catch (error) {
+        console.error('Failed to load migration worker info:', error);
+    }
+}
+
+function updateMigrationWorkerUI() {
+    const controls = document.querySelectorAll('.status-worker-control');
+    const control = controls[1]; // Second control is Migration Worker
+    const statusEl = document.getElementById('migration-worker-status');
+    const buttonEl = document.getElementById('migration-worker-toggle');
+    
+    if (migrationWorkerInfo.running) {
+        control.classList.add('running');
+        control.classList.remove('stopped');
+        buttonEl.textContent = 'Stop';
+        buttonEl.disabled = false;
+        
+        statusEl.textContent = `Running (${migrationWorkerInfo.inProgress}/${migrationWorkerInfo.maxConcurrent})`;
+    } else {
+        control.classList.remove('running');
+        control.classList.add('stopped');
+        buttonEl.textContent = 'Start';
+        buttonEl.disabled = false;
+        statusEl.textContent = 'Stopped';
+    }
+}
+
+async function toggleMigrationWorker() {
+    const button = document.getElementById('migration-worker-toggle');
+    button.disabled = true;
+    
+    try {
+        const endpoint = migrationWorkerInfo.running ? '/api/migration-worker/stop' : '/api/migration-worker/start';
+        const response = await fetch(endpoint, { method: 'POST' });
+        const result = await response.json();
+        
+        if (result.success) {
+            await loadMigrationWorkerInfo();
+        } else {
+            console.error('Failed to toggle migration worker:', result.message);
+            button.disabled = false;
+        }
+    } catch (error) {
+        console.error('Error toggling migration worker:', error);
+        button.disabled = false;
+    }
+}
+
+async function loadProgressWorkerInfo() {
+    try {
+        const response = await fetch('/api/progress-worker');
+        progressWorkerInfo = await response.json();
+        updateProgressWorkerUI();
+    } catch (error) {
+        console.error('Failed to load progress worker info:', error);
+    }
+}
+
+function updateProgressWorkerUI() {
+    const controls = document.querySelectorAll('.status-worker-control');
+    const control = controls[2]; // Third control is Progress Worker
+    const statusEl = document.getElementById('progress-worker-status');
+    const buttonEl = document.getElementById('progress-worker-toggle');
+    
+    if (progressWorkerInfo.running) {
+        control.classList.add('running');
+        control.classList.remove('stopped');
+        buttonEl.textContent = 'Stop';
+        buttonEl.disabled = false;
+        
+        if (progressWorkerInfo.currentRepo) {
+            statusEl.textContent = progressWorkerInfo.currentRepo;
+        } else {
+            statusEl.textContent = 'Running (idle)';
+        }
+    } else {
+        control.classList.remove('running');
+        control.classList.add('stopped');
+        buttonEl.textContent = 'Start';
+        buttonEl.disabled = false;
+        statusEl.textContent = 'Stopped';
+    }
+}
+
+async function toggleProgressWorker() {
+    const button = document.getElementById('progress-worker-toggle');
+    button.disabled = true;
+    
+    try {
+        const endpoint = progressWorkerInfo.running ? '/api/progress-worker/stop' : '/api/progress-worker/start';
+        const response = await fetch(endpoint, { method: 'POST' });
+        const result = await response.json();
+        
+        if (result.success) {
+            await loadProgressWorkerInfo();
+        } else {
+            console.error('Failed to toggle progress worker:', result.message);
+            button.disabled = false;
+        }
+    } catch (error) {
+        console.error('Error toggling progress worker:', error);
+        button.disabled = false;
+    }
 }

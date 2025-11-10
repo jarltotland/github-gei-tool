@@ -169,30 +169,40 @@ export async function getMigrationStatus(
   migrationId: string
 ): Promise<{ state: string; createdAt?: string; updatedAt?: string; failureReason?: string } | null> {
   try {
-    const args = ['api'];
+    // Use GraphQL API to query migration status
+    const query = `query($id: ID!) { node(id: $id) { ... on RepositoryMigration { id state createdAt failureReason sourceUrl } } }`;
+
+    const args = ['api', 'graphql'];
     
     if (hostConfig.hostLabel !== 'github.com') {
       args.push('--hostname', hostConfig.hostLabel);
     }
     
-    args.push(`/orgs/${hostConfig.org}/migrations/${migrationId}`);
+    args.push('-f', `query=${query}`, '-F', `id=${migrationId}`);
 
     const result = await runGh(args, { GH_TOKEN: hostConfig.token });
 
     if (result.code !== 0) {
-      console.error(`[${new Date().toISOString()}] Failed to get migration status for ${migrationId}: ${result.stderr}`);
+      // Don't log errors for every check - migrations complete and disappear quickly
       return null;
     }
 
     const response = JSON.parse(result.stdout);
+    
+    if (!response.data || !response.data.node) {
+      // Migration not found or completed
+      return null;
+    }
+
+    const migration = response.data.node;
     return {
-      state: response.state,
-      createdAt: response.created_at,
-      updatedAt: response.updated_at,
-      failureReason: response.failure_reason
+      state: migration.state,
+      createdAt: migration.createdAt,
+      updatedAt: undefined,
+      failureReason: migration.failureReason
     };
   } catch (error) {
-    console.error(`[${new Date().toISOString()}] Error getting migration status:`, error);
+    // Silently return null - migrations completing successfully will cause this
     return null;
   }
 }
@@ -245,7 +255,6 @@ export async function needsMigration(sourceConfig: HostConfig, targetConfig: Hos
   const sourceLastUpdated = await getRepoLastUpdated(sourceConfig, repoName);
   
   if (!existsInTarget) {
-    console.log(`[${new Date().toISOString()}] ${repoName}: Not in target, needs migration`);
     return { needs: true, lastPushed: sourceLastUpdated || undefined };
   }
 
@@ -253,7 +262,6 @@ export async function needsMigration(sourceConfig: HostConfig, targetConfig: Hos
   const targetLastUpdated = await getRepoLastUpdated(targetConfig, repoName);
 
   if (!sourceLastUpdated || !targetLastUpdated) {
-    console.log(`[${new Date().toISOString()}] ${repoName}: Could not determine update times, assuming needs migration`);
     return { needs: true, lastPushed: sourceLastUpdated || undefined };
   }
 
@@ -261,10 +269,8 @@ export async function needsMigration(sourceConfig: HostConfig, targetConfig: Hos
   const targetDate = new Date(targetLastUpdated).getTime();
 
   if (sourceDate > targetDate) {
-    console.log(`[${new Date().toISOString()}] ${repoName}: Source has newer changes (${sourceLastUpdated} > ${targetLastUpdated})`);
     return { needs: true, lastPushed: sourceLastUpdated };
   }
 
-  console.log(`[${new Date().toISOString()}] ${repoName}: Target is up to date, skipping migration`);
   return { needs: false, lastPushed: sourceLastUpdated };
 }

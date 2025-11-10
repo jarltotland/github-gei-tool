@@ -6,7 +6,10 @@ import { hideBin } from 'yargs/helpers';
 import { loadConfig, Config } from './config';
 import * as state from './state';
 import { checkGhCli, checkGeiExtension } from './github';
-import { queueMigrations, pollMigrationStatuses } from './migrator';
+import { discoverRepositories } from './workers/discoveryWorker';
+import { pollMigrationStatuses } from './workers/progressWorker';
+import { checkOldestRepos } from './workers/statusWorker';
+import { queueNextRepo } from './workers/migrationWorker';
 import { getRepoLogs } from './logs';
 
 const argv = yargs(hideBin(process.argv))
@@ -31,7 +34,16 @@ const argv = yargs(hideBin(process.argv))
 let config: Config;
 let sseClients: Response[] = [];
 let pollInterval: NodeJS.Timeout | null = null;
+let statusWorkerInterval: NodeJS.Timeout | null = null;
+let migrationWorkerInterval: NodeJS.Timeout | null = null;
+let progressWorkerInterval: NodeJS.Timeout | null = null;
 let heartbeatInterval: NodeJS.Timeout | null = null;
+let statusWorkerRunning = false;
+let statusWorkerCurrentRepo: string | null = null;
+let migrationWorkerRunning = false;
+let progressWorkerRunning = false;
+let progressWorkerCurrentRepo: string | null = null;
+const MAX_CONCURRENT_MIGRATIONS = 10;
 
 async function main() {
   console.log(`[${new Date().toISOString()}] GitHub Migration Dashboard starting...`);
@@ -53,7 +65,7 @@ async function main() {
   }
 
   // Initialize state
-  state.initState(config.source.org, config.target.org, config.source.hostLabel, config.target.hostLabel);
+  state.initState(config.source.enterprise, config.source.org, config.target.enterprise, config.target.org, config.source.hostLabel, config.target.hostLabel);
 
   // Print banner
   console.log('');
@@ -76,11 +88,14 @@ async function main() {
   // Start polling
   startPolling();
 
-  // Queue migrations in background if not skipped
-  if (!argv.noQueue) {
-    // Run queueing in the background without blocking
-    queueMigrationsAsync(config);
-  }
+  // Start status worker
+  startStatusWorker();
+
+  // Start progress worker (monitors in-progress migrations)
+  startProgressWorker();
+
+  // Discover repositories in background (one-time)
+  discoverRepositoriesAsync(config);
 
   // Handle graceful shutdown
   process.on('SIGINT', shutdown);
@@ -89,6 +104,9 @@ async function main() {
 
 function startServer() {
   const app = express();
+  
+  // Parse JSON bodies
+  app.use(express.json());
 
   // Serve static files
   app.get('/', (req, res) => {
@@ -108,6 +126,85 @@ function startServer() {
   // API endpoints
   app.get('/api/state', (req, res) => {
     res.json(state.getState());
+  });
+
+  app.get('/api/status-worker', (req, res) => {
+    res.json({
+      running: statusWorkerRunning,
+      currentRepo: statusWorkerCurrentRepo
+    });
+  });
+
+  app.post('/api/status-worker/start', (req, res) => {
+    if (!statusWorkerRunning) {
+      startStatusWorker();
+      res.json({ success: true, running: true });
+    } else {
+      res.json({ success: false, message: 'Already running' });
+    }
+  });
+
+  app.post('/api/status-worker/stop', (req, res) => {
+    if (statusWorkerRunning) {
+      stopStatusWorker();
+      res.json({ success: true, running: false });
+    } else {
+      res.json({ success: false, message: 'Not running' });
+    }
+  });
+
+  app.get('/api/migration-worker', (req, res) => {
+    const inProgress = state.listAll().filter(r => 
+      ['queued', 'exporting', 'exported', 'importing'].includes(r.status)
+    );
+    res.json({
+      running: migrationWorkerRunning,
+      inProgress: inProgress.length,
+      maxConcurrent: MAX_CONCURRENT_MIGRATIONS
+    });
+  });
+
+  app.post('/api/migration-worker/start', (req, res) => {
+    if (!migrationWorkerRunning) {
+      startMigrationWorker();
+      res.json({ success: true, running: true });
+    } else {
+      res.json({ success: false, message: 'Already running' });
+    }
+  });
+
+  app.post('/api/migration-worker/stop', (req, res) => {
+    if (migrationWorkerRunning) {
+      stopMigrationWorker();
+      res.json({ success: true, running: false });
+    } else {
+      res.json({ success: false, message: 'Not running' });
+    }
+  });
+
+  app.get('/api/progress-worker', (req, res) => {
+    res.json({
+      running: progressWorkerRunning,
+      currentRepo: progressWorkerCurrentRepo
+    });
+  });
+
+  app.post('/api/progress-worker/start', (req, res) => {
+    if (!progressWorkerRunning) {
+      startProgressWorker();
+      res.json({ success: true, running: true });
+    } else {
+      res.json({ success: false, message: 'Already running' });
+    }
+  });
+
+  app.post('/api/progress-worker/stop', (req, res) => {
+    if (progressWorkerRunning) {
+      stopProgressWorker();
+      res.json({ success: true, running: false });
+    } else {
+      res.json({ success: false, message: 'Not running' });
+    }
   });
 
   app.get('/api/logs/:repo', async (req, res) => {
@@ -174,11 +271,212 @@ function startPolling() {
   pollInterval = setInterval(poll, config.pollSeconds * 1000);
 }
 
-async function queueMigrationsAsync(config: Config) {
+function startStatusWorker() {
+  if (statusWorkerRunning) {
+    return;
+  }
+  
+  // Check every hour for repos older than 5 minutes
+  const statusWorkerIntervalSeconds = 3600; // 1 hour
+  
+  statusWorkerRunning = true;
+  console.log(`[${new Date().toISOString()}] Status worker started (checking every ${statusWorkerIntervalSeconds}s)`);
+  
+  // Run immediately on startup
+  statusWorkerCheck();
+  
+  // Then run on interval
+  statusWorkerInterval = setInterval(statusWorkerCheck, statusWorkerIntervalSeconds * 1000);
+  
+  broadcastStateUpdate();
+}
+
+function stopStatusWorker() {
+  if (!statusWorkerRunning) {
+    return;
+  }
+  
+  statusWorkerRunning = false;
+  statusWorkerCurrentRepo = null;
+  
+  if (statusWorkerInterval) {
+    clearInterval(statusWorkerInterval);
+    statusWorkerInterval = null;
+  }
+  
+  console.log(`[${new Date().toISOString()}] Status worker stopped`);
+  broadcastStateUpdate();
+}
+
+async function statusWorkerCheck() {
   try {
-    await queueMigrations(config, broadcastStateUpdate);
+    await checkOldestRepos(
+      config, 
+      broadcastStateUpdate, 
+      5, 
+      5,
+      (repoName) => {
+        statusWorkerCurrentRepo = repoName;
+        broadcastStateUpdate();
+      },
+      () => {
+        statusWorkerCurrentRepo = null;
+        broadcastStateUpdate();
+      }
+    );
   } catch (error) {
-    console.error(`[${new Date().toISOString()}] Error queueing migrations:`, error);
+    console.error(`[${new Date().toISOString()}] Error in status worker:`, error);
+  }
+}
+
+function startMigrationWorker() {
+  if (migrationWorkerRunning) {
+    return;
+  }
+  
+  migrationWorkerRunning = true;
+  console.log(`[${new Date().toISOString()}] Migration worker started (max ${MAX_CONCURRENT_MIGRATIONS} concurrent)`);
+  
+  broadcastStateUpdate();
+  
+  // Start the worker loop
+  runMigrationWorkerTick();
+}
+
+function stopMigrationWorker() {
+  if (!migrationWorkerRunning) {
+    return;
+  }
+  
+  migrationWorkerRunning = false;
+  
+  if (migrationWorkerInterval) {
+    clearTimeout(migrationWorkerInterval);
+    migrationWorkerInterval = null;
+  }
+  
+  console.log(`[${new Date().toISOString()}] Migration worker stopped`);
+  broadcastStateUpdate();
+}
+
+async function runMigrationWorkerTick() {
+  // Exit if worker was stopped
+  if (!migrationWorkerRunning) {
+    return;
+  }
+  
+  try {
+    // Count current in-progress migrations
+    const allRepos = state.listAll();
+    const inProgress = allRepos.filter(r => 
+      ['queued', 'exporting', 'exported', 'importing'].includes(r.status)
+    );
+    
+    const slotsAvailable = MAX_CONCURRENT_MIGRATIONS - inProgress.length;
+    
+    if (slotsAvailable > 0) {
+      // Try to queue up to available slots
+      let queued = 0;
+      for (let i = 0; i < slotsAvailable; i++) {
+        const repoName = await queueNextRepo(config);
+        if (repoName) {
+          console.log(`[${new Date().toISOString()}] Migration worker: Queued ${repoName} (${inProgress.length + queued + 1}/${MAX_CONCURRENT_MIGRATIONS})`);
+          queued++;
+          broadcastStateUpdate();
+        } else {
+          break; // No more repos to queue
+        }
+      }
+      
+      if (queued > 0) {
+        // Check again soon for more slots
+        migrationWorkerInterval = setTimeout(runMigrationWorkerTick, 5000);
+      } else {
+        // No repos to queue, wait longer
+        migrationWorkerInterval = setTimeout(runMigrationWorkerTick, 30000);
+      }
+    } else {
+      // At capacity, check again soon
+      migrationWorkerInterval = setTimeout(runMigrationWorkerTick, 10000);
+    }
+  } catch (error) {
+    console.error(`[${new Date().toISOString()}] Error in migration worker:`, error);
+    broadcastStateUpdate();
+    
+    // Retry after a delay
+    migrationWorkerInterval = setTimeout(runMigrationWorkerTick, 10000);
+  }
+}
+
+function startProgressWorker() {
+  if (progressWorkerRunning) {
+    return;
+  }
+  
+  progressWorkerRunning = true;
+  console.log(`[${new Date().toISOString()}] Progress worker started`);
+  
+  broadcastStateUpdate();
+  
+  // Start the worker loop
+  runProgressWorkerTick();
+}
+
+function stopProgressWorker() {
+  if (!progressWorkerRunning) {
+    return;
+  }
+  
+  progressWorkerRunning = false;
+  progressWorkerCurrentRepo = null;
+  
+  if (progressWorkerInterval) {
+    clearTimeout(progressWorkerInterval);
+    progressWorkerInterval = null;
+  }
+  
+  console.log(`[${new Date().toISOString()}] Progress worker stopped`);
+  broadcastStateUpdate();
+}
+
+async function runProgressWorkerTick() {
+  // Exit if worker was stopped
+  if (!progressWorkerRunning) {
+    return;
+  }
+  
+  try {
+    // Poll all in-progress migrations
+    await pollMigrationStatuses(
+      config, 
+      broadcastStateUpdate,
+      (repoName) => {
+        progressWorkerCurrentRepo = repoName;
+        broadcastStateUpdate();
+      },
+      () => {
+        progressWorkerCurrentRepo = null;
+        broadcastStateUpdate();
+      }
+    );
+    
+    // Check again in a few seconds
+    progressWorkerInterval = setTimeout(runProgressWorkerTick, 5000);
+  } catch (error) {
+    console.error(`[${new Date().toISOString()}] Error in progress worker:`, error);
+    progressWorkerCurrentRepo = null;
+    broadcastStateUpdate();
+    
+    // Retry after a delay
+    progressWorkerInterval = setTimeout(runProgressWorkerTick, 10000);
+  }
+}
+
+async function discoverRepositoriesAsync(config: Config) {
+  try {
+    await discoverRepositories(config, broadcastStateUpdate);
+  } catch (error) {
+    console.error(`[${new Date().toISOString()}] Error discovering repositories:`, error);
   }
 }
 
@@ -196,6 +494,18 @@ async function shutdown() {
   // Stop polling
   if (pollInterval) {
     clearInterval(pollInterval);
+  }
+
+  if (statusWorkerInterval) {
+    clearInterval(statusWorkerInterval);
+  }
+
+  if (migrationWorkerInterval) {
+    clearTimeout(migrationWorkerInterval);
+  }
+
+  if (progressWorkerInterval) {
+    clearTimeout(progressWorkerInterval);
   }
 
   if (heartbeatInterval) {
