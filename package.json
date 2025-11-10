@@ -1,0 +1,27 @@
+{
+  "name": "gitmigrate",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["github", "migration", "gei"],
+  "author": "",
+  "license": "ISC",
+  "description": "GitHub Enterprise Importer migration dashboard",
+  "dependencies": {
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "yargs": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/yargs": "^17.0.34",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

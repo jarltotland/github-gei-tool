@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Allow tests to run without exiting on errors
+if [ "$TEST_MODE" = "1" ]; then
+    set +e
+fi
+
 # Read .env vars
 if [ -f .env ]; then
     export $(grep -v '^#' .env | xargs)

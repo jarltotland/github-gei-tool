@@ -1,1 +1,7 @@
 .env
+node_modules
+dist
+logs
+data/migrations-state.json
+tmp
+*.log
