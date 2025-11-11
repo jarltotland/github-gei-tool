@@ -38,6 +38,7 @@ let statusWorkerInterval: NodeJS.Timeout | null = null;
 let migrationWorkerInterval: NodeJS.Timeout | null = null;
 let progressWorkerInterval: NodeJS.Timeout | null = null;
 let heartbeatInterval: NodeJS.Timeout | null = null;
+let backupInterval: NodeJS.Timeout | null = null;
 let statusWorkerRunning = false;
 let statusWorkerCurrentRepo: string | null = null;
 let migrationWorkerRunning = false;
@@ -93,6 +94,9 @@ async function main() {
 
   // Start progress worker (monitors in-progress migrations)
   startProgressWorker();
+
+  // Start hourly backup scheduler
+  startBackupScheduler();
 
   // Discover repositories in background (one-time)
   discoverRepositoriesAsync(config);
@@ -558,8 +562,13 @@ async function shutdown() {
     clearInterval(heartbeatInterval);
   }
 
-  // Save state
-  await state.saveState();
+  if (backupInterval) {
+    clearTimeout(backupInterval);
+  }
+
+  // Flush any pending debounced saves
+  console.log(`[${new Date().toISOString()}] Flushing pending state changes...`);
+  await state.flushPendingSaves();
 
   // Close SSE connections
   sseClients.forEach(client => {
@@ -572,6 +581,71 @@ async function shutdown() {
 
   console.log(`[${new Date().toISOString()}] Shutdown complete`);
   process.exit(0);
+}
+
+function startBackupScheduler() {
+  const BACKUP_DIR = path.join(process.cwd(), 'data', 'backups');
+  const STATE_FILE = path.join(process.cwd(), 'data', 'migrations-state.json');
+  const MAX_BACKUPS = 24;
+
+  // Ensure backup directory exists
+  if (!fs.existsSync(BACKUP_DIR)) {
+    fs.mkdirSync(BACKUP_DIR, { recursive: true });
+  }
+
+  const performBackup = async () => {
+    try {
+      // Check if state file exists
+      if (!fs.existsSync(STATE_FILE)) {
+        console.log(`[${new Date().toISOString()}] Backup: State file not found, skipping`);
+        return;
+      }
+
+      // Create backup filename with timestamp
+      const now = new Date();
+      const timestamp = now.toISOString()
+        .replace(/T/, '-')
+        .replace(/:/g, '-')
+        .replace(/\..*/, '')
+        .substring(0, 16); // YYYY-MM-DD-HH-mm
+      const backupFile = path.join(BACKUP_DIR, `migrations-state-${timestamp}.json`);
+
+      // Copy state file to backup
+      await fs.promises.copyFile(STATE_FILE, backupFile);
+      console.log(`[${new Date().toISOString()}] Backup: Created ${path.basename(backupFile)}`);
+
+      // Rotate old backups
+      const files = await fs.promises.readdir(BACKUP_DIR);
+      const backupFiles = files
+        .filter(f => f.startsWith('migrations-state-') && f.endsWith('.json'))
+        .sort()
+        .reverse(); // Newest first
+
+      // Delete oldest backups if we have more than MAX_BACKUPS
+      if (backupFiles.length > MAX_BACKUPS) {
+        const toDelete = backupFiles.slice(MAX_BACKUPS);
+        for (const file of toDelete) {
+          await fs.promises.unlink(path.join(BACKUP_DIR, file));
+          console.log(`[${new Date().toISOString()}] Backup: Deleted old backup ${file}`);
+        }
+      }
+    } catch (error) {
+      console.error(`[${new Date().toISOString()}] Backup: Error creating backup:`, error);
+    }
+  };
+
+  // Calculate time until next hour
+  const now = new Date();
+  const msUntilNextHour = (60 - now.getMinutes()) * 60 * 1000 - now.getSeconds() * 1000 - now.getMilliseconds();
+
+  console.log(`[${new Date().toISOString()}] Backup scheduler: First backup in ${Math.round(msUntilNextHour / 1000 / 60)} minutes`);
+
+  // Schedule first backup at the next hour
+  backupInterval = setTimeout(() => {
+    performBackup();
+    // Then run every hour
+    backupInterval = setInterval(performBackup, 60 * 60 * 1000);
+  }, msUntilNextHour);
 }
 
 // Start the application

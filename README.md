@@ -167,9 +167,21 @@ All three workers can be independently controlled from the dashboard:
 
 ### Persistence
 
-- State saved to `data/migrations-state.json` after every update
+- State changes are debounced and written to `data/migrations-state.json` every 10 seconds
+- On graceful shutdown (Ctrl-C), all pending changes are flushed immediately
+- Hourly automatic backups to `data/backups/` (keeps last 24)
 - Stop and restart anytime - progress is preserved
 - Workers remember their state across restarts
+
+**Data Safety:**
+- Atomic writes prevent corruption (temp file + rename)
+- Up to 10 seconds of changes could be lost in a hard crash (kill -9, power loss)
+- Backups provide hourly recovery points
+
+**Restore from backup:**
+```bash
+cp data/backups/migrations-state-YYYY-MM-DD-HH-mm.json data/migrations-state.json
+```
 
 ## Dashboard
 

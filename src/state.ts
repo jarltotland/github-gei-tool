@@ -46,7 +46,12 @@ export interface MigrationState {
 }
 
 const STATE_FILE = path.join(process.cwd(), 'data', 'migrations-state.json');
+const DEBOUNCE_MS = 10000; // 10 seconds
+
 let writeMutex = Promise.resolve();
+let debounceTimer: NodeJS.Timeout | null = null;
+let isDirty = false;
+let pendingResolvers: Array<() => void> = [];
 
 let currentState: MigrationState = {
   version: 1,
@@ -153,9 +158,59 @@ export function listAll(): RepoState[] {
 }
 
 export function saveState(): Promise<void> {
-  // Use a mutex to prevent concurrent writes
+  // Mark state as dirty
+  isDirty = true;
+  
+  // Clear existing debounce timer
+  if (debounceTimer) {
+    clearTimeout(debounceTimer);
+  }
+  
+  // Create a promise that will resolve when the next flush happens
+  const promise = new Promise<void>((resolve) => {
+    pendingResolvers.push(resolve);
+  });
+  
+  // Schedule a debounced flush
+  debounceTimer = setTimeout(() => {
+    flushPendingSaves();
+  }, DEBOUNCE_MS);
+  
+  return promise;
+}
+
+export function flushPendingSaves(): Promise<void> {
+  // Clear debounce timer
+  if (debounceTimer) {
+    clearTimeout(debounceTimer);
+    debounceTimer = null;
+  }
+  
+  // Nothing to save
+  if (!isDirty) {
+    // Resolve any pending promises
+    const resolvers = pendingResolvers.splice(0);
+    resolvers.forEach(resolve => resolve());
+    return Promise.resolve();
+  }
+  
+  // Mark as no longer dirty
+  isDirty = false;
+  
+  // Capture pending resolvers
+  const resolvers = pendingResolvers.splice(0);
+  
+  // Use mutex to prevent concurrent writes
   writeMutex = writeMutex.then(() => doSaveState());
-  return writeMutex;
+  
+  // Resolve all pending promises when write completes
+  return writeMutex.then(() => {
+    resolvers.forEach(resolve => resolve());
+  }).catch((error) => {
+    // Still resolve to avoid hanging callers
+    resolvers.forEach(resolve => resolve());
+    throw error;
+  });
 }
 
 async function doSaveState(): Promise<void> {
