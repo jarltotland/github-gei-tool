@@ -1,6 +1,8 @@
 # GitHub Migration Dashboard
 
-A TypeScript-based web dashboard for managing GitHub Enterprise Importer (GEI) migrations with real-time status updates. Uses `gh gei` CLI for all migration operations.
+A TypeScript-based web dashboard for managing GitHub Enterprise Importer (GEI) migrations with real-time status updates. Uses `gh gei` CLI or GitHub APIs for all migration operations.
+
+![screenshot](screenshot.png)
 
 ## Features
 
